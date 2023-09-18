@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Grades</title>
+</head>
+
+<body>
+    <table style="border-collapse: collapse; width: 100%;">
+        <tr class="row">
+            <!-- 1 Canvas Navigation -->
+            <td style="vertical-align: top;">
+                <nav class="navigation">                
+                    <ul>                  
+                        <li><a href="profile/profile.html">Account</a></li>                   
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="home.html">Courses</a></li>
+                        <li><a href="#">Calendar</a></li>
+                        <li><a href="#">Inbox</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </nav>
+            </td>
+            
+            <!-- 2 Course Navigation -->
+            <td style="vertical-align: top;">
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="#">Modules</a></li>
+                        <li><a href="#">Piazza</a></li>
+                        <li><a href="#">Zoom Meetings</a></li>
+                        <li><a href="assignments/assignments.html">Assignment</a></li>
+                        <li><a href="grades.html">Grades</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">Panapto Video</a></li>
+                        <li><a href="#">Discussions</a></li>
+                        <li><a href="#">Announcements</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Files</a></li>
+                        <li><a href="#">Rubric</a></li>
+                        <li><a href="#">Outcomes</a></li>
+                        <li><a href="#">Collaborations</a></li>
+                        <li><a href="#">Syllabus</a></li>
+                        <li><a href="#">Collaborations</a></li>
+                        <li><a href="settings/coursedetails.html">Settings</a></li>
+                    </ul>
+                </nav>
+            </td>
+
+            <!-- 3 Course Content -->
+            <td>
+                <select>
+                    <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option selected value="gradebook">Gradebook</option>
+                        <option value="3">3</option>
+                </select>
+                <button>Import</button>
+                <select>
+                    <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option selected value="export">Export</option>
+                        <option value="3">3</option>
+                </select>
+                <button>Configure</button>
+
+                <h3>Student Names</h3>
+                <input type="text" id="text-fields-rating" placeholder="Search Students" max="20">
+                <h3>Assignment Names</h3>
+                <input type="text" id="text-fields-rating" placeholder="Search Assignments" max="20">
+
+                <button>Apply Filter</button>
+
+                <table border="2">
+                    <thead>
+                        <tr>
+                            <th>Student</th>
+                            <th>Web Dev Assignment 1</th>
+                            <th>Web Dev Assignment 2</th>
+                            <th>Web Dev Assignment 3</th>
+                            <th>Web Dev Assignment 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Student 1</td>
+                            <td>90</td>
+                            <td>85</td>
+                            <td>95</td>
+                            <td>88</td>
+                        </tr>
+                        <tr>
+                            <td>Student 2</td>
+                            <td>90</td>
+                            <td>85</td>
+                            <td>95</td>
+                            <td>88</td>
+                        </tr>
+                        <tr>
+                            <td>Student 3</td>
+                            <td>90</td>
+                            <td>85</td>
+                            <td>95</td>
+                            <td>88</td>
+                        </tr>
+                        <tr>
+                            <td>Student 4</td>
+                            <td>90</td>
+                            <td>85</td>
+                            <td>95</td>
+                            <td>88</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
