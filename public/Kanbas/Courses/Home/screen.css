@@ -1,0 +1,210 @@
+/* CSS for Account Sidebar */
+.wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.wd-flex-grow-1 {
+    flex-grow: 1;
+}
+
+.right-side {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    gap: 10px;
+  }
+
+#account-sidebar {
+    background-color: black;
+    width: 80px;
+    min-height: 100vh;
+    padding: 10px 0;
+    margin: 0px;
+}
+
+#account-sidebar .nav-link {
+    width: 80px;
+    color: white;
+    font-size: 14px;
+    margin: 5px 0;
+    padding: 10px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#account-sidebar .nav-link .account-icon {
+    color: #bbb;
+}
+
+#account-sidebar .nav-link.active {
+    background-color: white;
+    color: red;
+}
+
+#account-sidebar .nav-link:not(.active) {
+    background-color: black;
+    color: white;
+}
+
+#account-sidebar .nav-link i {
+    color: red;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.title-content {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 5px 0 5px 20px;
+}
+
+.title-content .breadcrumb .course-name {
+    color: red;
+}
+
+.title-content .fa-bars {
+    color: red;
+}
+
+.title-content p {
+    margin: 14px;
+}
+
+#navigation-sidebar {
+    color: white;
+    width: 190px;
+    padding: 0;
+    margin-left: 20px;
+}
+
+#navigation-sidebar .nav-item {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+#navigation-sidebar .nav-link {
+    color: red;
+    font-size: 14px;
+    text-decoration: none;
+    border-left: 5px solid transparent;
+    padding: 0 0 0 8px;
+}
+
+#navigation-sidebar .nav-link.active {
+    color: black;
+    border-left: 2px solid black;
+    padding-left: 8px;
+}
+
+#courses-home-content .header-line {
+    margin: 0px 20px 20px 20px;
+}
+
+#courses-home-content .breadcrumb-item + .breadcrumb-item::before {
+    font-family: 'FontAwesome';
+    content: "\f105";
+}
+
+#courses-home-content .breadcrumb-item a {
+    color: red;
+    text-decoration: none;
+}
+
+#home-content {
+    margin: 0px 20px 0px 20px;
+}
+
+#home-content .list-indent-1 {
+    margin: 0 0 0 15px;
+}
+
+#home-content .list-indent-2 {
+    margin: 0 0 0 40px;
+}
+
+#home-content .list-item {
+    border-left: 4px solid green;
+}
+
+#home-content .list-header {
+    margin: 0 0 0 5px;
+}
+
+#home-content .list-header-content {
+    margin-left: 4px;
+}
+
+#home-content .home-buttons .publish-all-select {
+    width: 125px;
+}
+
+#home-content .home-buttons > * {
+    margin-left: 2px;
+}
+
+#home-content .modules .module-link {
+    color: red;
+    text-decoration: none;
+}
+
+#home-content .modules .fa-link {
+    color: green;
+    margin: 0 10px;
+}
+
+#home-content .modules .fa-plus {
+    color: darkgrey;
+}
+
+#course-status {
+    width: 10%;
+    float: right;
+    margin-right: 20px;
+}
+
+#course-status .course-status-buttons {
+    margin-bottom: 10px;
+}
+
+#course-status .list-unstyled * {
+    text-align: left;
+}
+
+#course-status .to-do-top-row-text {
+    margin: 0px;
+    color: red;
+}
+
+#course-status .fa-circle {
+    color: red;
+}
+
+#black-top-bar {
+    width: 100%;
+    height: 80px; /* Adjust the height as needed */
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#black-top-bar .row {
+    width: 100%;
+    margin: auto;
+}
+
+.square-image {
+    width: 100%;
+    height: 100%;
+}
+
+.secondary-sidebar a.secondary-active {
+    color: black;
+    border-left: 2px solid black;
+  }

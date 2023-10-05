@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment</title>
+    <link href="index.css"
+    rel="stylesheet"/>
+    <link href="../../../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+</head>
+
+<div class="wd-flex-row-container">
+    <div id="account-sidebar" class="position-sticky d-none d-md-block">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <img class="square-image" src="../../../../images/neulogo.png"
+                     alt="Northeastern Logo">
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="../../../Account/Profile/index.html">
+                  <i class= "fa fa-user fa-2x" style="color: gray;"></i>
+                    Account
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" href="../../../Dashboard/index.html">
+                  <i class="fa fa-tachometer-alt fa-2x" style="color: #ff0000;"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="../../../Courses/Home/screen.html">
+                    <i class="fas fa-book"></i>
+                    Courses
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-calendar"></i>
+                    Calendar
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-inbox"></i>
+                    Inbox
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-clock"></i>
+                    History
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fa fa-tv fa-2x" style="color: #ff0000;"></i>
+                    Studio
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-arrow-circle-right wd-red-icon" style="color: #ff0000;"></i>
+                    Commons
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-question"></i>
+                    Help
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="courses-home-content" class="wd-flex-grow-1">
+        <div class="position-sticky d-none d-sm-block">
+            <div class="title-content">
+                <i class="fas fa-bars fa-lg"></i>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-2">
+                        <li class="breadcrumb-item"><a href="#">CS5610.123456</a></li>
+                        <li class="breadcrumb-item active" aria-current="page"><a
+                                href="../index.html">Assignment</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">A1 - ENV + HTML</li>
+                    </ol>
+                </nav>
+                <a href="../index.html" class="btn btn-secondary ms-auto me-2" role="button">
+                    <i class="fas fa-glasses"></i>
+                    Student View
+                </a>
+            </div>
+        </div>
+
+        <hr class="header-line"/>
+
+        <div class="wd-flex-row-container">
+            <div id="navigation-sidebar" class="position-sticky d-none d-sm-block">
+                <ul class="nav flex-column">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../Home/screen.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Modules
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Piazza
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Zoom Meetings
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../index.html">
+                            Assignments
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Quizzes
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../Grades/grades.html">
+                            Grades
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            People
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Panopto Video
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Discussions
+                            <i class="fas fa-eye-slash float-end"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Announcements
+                            <i class="fas fa-eye-slash float-end"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Pages
+                            <i class="fas fa-eye-slash float-end"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Files
+                            <i class="fas fa-eye-slash float-end"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Rubrics
+                            <i class="fas fa-eye-slash float-end"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Outcomes
+                            <i class="fas fa-eye-slash float-end"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Collaborations
+                            <i class="fas fa-eye-slash float-end"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Syllabus
+                            <i class="fas fa-eye-slash float-end"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Progress Reports (EAB Navigate)
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../Settings/coursedetails.html">
+                            Settings
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <hr/>
+            <div id="home-content" class="wd-flex-grow-1">
+
+                <div class="row">
+                    <div class="col-11 col-sm-12">
+                        <div class="assignment-buttons d-flex align-items-center justify-content-end">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-circle-check fa-lg text-success"></i>
+                                <p class="list-header me-2 text-success">Published</p>
+                            </div>
+                            <a href="../index.html" class="btn btn-secondary" role="button">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+
+                <div id="module-1" class="row">
+                    <div class="col-11 col-sm-12">
+                        <form id="assignment-edit">
+                            <label for="text-fields-assignment-name"
+                                   class="form-label">
+                                Assignment Name</label>
+                            <input id="text-fields-assignment-name"
+                                   value="A1 - ENV + HTML"
+                                   class="form-control"/>
+                            <textarea name="assignment_description" class="form-control mt-4"
+                                      cols="20"
+                                      rows="4">This assignment describes how to install the development environment for creating and working with Web applications we will be developing this semester. We will add new content every week, pushing the code to a GitHub source repository, and then deploying the content to a remote server hosted on Netlify.
+                                    </textarea>
+
+                            <div class="row mt-4">
+                                <div class="col-2 col-sm-4">
+                                    <label for="points-input" class="form-label float-end">
+                                        Points
+                                    </label>
+                                </div>
+                                <div class="col-4 col-sm-8 right-input">
+                                    <input id="points-input" class="form-control" value="100"/>
+                                </div>
+                            </div>
+
+                            <div class="row mt-4">
+                                <div class="col-3 col-sm-4">
+                                    <label for="select-assignment-group"
+                                           class="form-label float-end">
+                                        Assignment Group
+                                    </label>
+                                </div>
+                                <div class="col-4 col-sm-8 right-input">
+                                    <select id="select-assignment-group" class="form-select">
+                                        <option selected value="ASSIGNMENT">ASSIGNMENT</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row mt-4">
+                                <div class="col-3 col-sm-4">
+                                    <label for="select-display-grade" class="form-label float-end">
+                                        Display Grade as
+                                    </label>
+                                </div>
+                                <div class="right-input col-4 col-sm-8">
+                                    <select id="select-display-grade" class="form-select">
+                                        <option selected value="PERCENTAGE">Percentage</option>
+                                    </select>
+                                    <div class="mt-4">
+                                        <input type="checkbox" class="form-check-input"
+                                               value="WEBSITEURL"
+                                               name="check-genre" id="do-not-count-checkbox"/>
+                                        <label for="do-not-count-checkbox">Do not count this
+                                            assignment
+                                            towards the
+                                            final grade</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-4">
+                                <div class="col-auto col-sm-4">
+                                    <label for="select-submission-type"
+                                           class="form-label float-end">
+                                        Submission Type
+                                    </label>
+                                </div>
+                                <div class="col-auto col-sm-8">
+                                    <div class="card right-input-card">
+                                        <div class="card-body">
+                                            <select id="select-submission-type"
+                                                    class="form-select card-input">
+                                                <option selected value="ONLINE">Online</option>
+                                            </select>
+
+                                            <label class="form-label">Online Entry Options</label>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input"
+                                                       value="TEXTENTRY"
+                                                       name="check-genre" id="text-entry" checked/>
+                                                <label for="text-entry">Text Entry</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input"
+                                                       value="WEBSITEURL"
+                                                       name="check-genre" id="website-url" checked/>
+                                                <label for="website-url">Website URL</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input"
+                                                       value="MEDIARECORDINGS"
+                                                       name="check-genre" id="media-recordings"
+                                                       checked/>
+                                                <label for="media-recordings">Media
+                                                    Recordings</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input"
+                                                       value="STUDENTANNOTATION"
+                                                       name="check-genre" id="student-annotatoion"/>
+                                                <label for="student-annotatoion">Student
+                                                    Annotation</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input"
+                                                       value="FILEUPLOADS"
+                                                       name="check-genre" id="file-uploads"/>
+                                                <label for="file-uploads">File Uploads</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-4">
+                                <div class="col-auto col-sm-4">
+                                    <label for="assign-to" class="form-label float-end">
+                                        Assign
+                                    </label>
+                                </div>
+                                <div class="col-auto col-sm-8">
+                                    <div class="card right-input-card">
+
+                                        <div class="card-body">
+                                            <label for="assign-to" class="form-label mt-0">Assign
+                                                To</label>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input"
+                                                       value="EVERYONE"
+                                                       name="everyone" id="assign-to"/>
+                                                <label for="assign-to">Everyone</label>
+                                            </div>
+
+                                            <label for="due-date" class="form-label">Due</label>
+                                            <input type="date" value="2021-01-01"
+                                                   name="due-date" id="due-date"
+                                                   class="form-control"/>
+
+                                            <div class="row">
+                                                <div class="col">
+                                                    <label for="available-date"
+                                                           class="form-label">Available from</label>
+                                                    <input type="date" value="2021-01-01"
+                                                           name="until-date" id="available-date"
+                                                           class="form-control"/>
+                                                </div>
+                                                <div class="col">
+                                                    <label for="until-date"
+                                                           class="form-label">Until</label>
+                                                    <input type="date"
+                                                           name="until-date" id="until-date"
+                                                           class="form-control"/>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="card-assign-to-add d-flex justify-content-center align-items-center p-2">
+                                            <i class="fas fa-plus me-2"></i>
+                                            <p class="m-0">Add</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr/>
+
+                            <div id="footer">
+                                <input type="checkbox" class="form-check-input"
+                                       value="WEBSITEURL"
+                                       name="check-genre" id="notify-users"/>
+                                <label for="notify-users">Notify users that this content has
+                                    changed</label>
+                                <div class="float-end mb-2">
+                                    <a href="../index.html" class="btn btn-danger ms-1"
+                                       role="button">
+                                        Save
+                                    </a>
+                                    <a href="../index.html" class="btn btn-secondary"
+                                       role="button">
+                                        Cancel
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

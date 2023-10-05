@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grades</title>
+    <link href="grades.css"
+    rel="stylesheet"/>
+    <link href="../../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+</head>
+  <body>
+    <div class="wd-flex-row-container">
+        <div id="account-sidebar" class="position-sticky d-none d-sm-block">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <img class="square-image" src="../../../images/neulogo.png"
+                        alt="Northeastern Logo">
+                </li>
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../Account/Profile/index.html">
+                      <i class= "fa fa-user fa-2x" style="color: gray;"></i>
+                        Account
+                    </a>
+                </li>
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../Dashboard/index.html">
+                      <i class="fa fa-tachometer-alt fa-2x" style="color: #ff0000;"></i>
+                        Dashboard
+                    </a>
+                </li>
+        
+                <li class="nav-item">
+                    <a class="nav-link  active" href="../../Courses/Home/screen.html">
+                        <i class="fas fa-book"></i>
+                        Courses
+                    </a>
+                </li>
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-calendar"></i>
+                        Calendar
+                    </a>
+                </li>
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-inbox"></i>
+                        Inbox
+                    </a>
+                </li>
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-clock"></i>
+                        History
+                    </a>
+                </li>
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-tv fa-2x" style="color: #ff0000;"></i>
+                        Studio
+                    </a>
+                </li>
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="fas fa-arrow-circle-right wd-red-icon" style="color: #ff0000;"></i>
+                        Commons
+                    </a>
+                </li>
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-question"></i>
+                        Help
+                    </a>
+                </li>
+            </ul>
+          </div>
+  
+      <div id="courses-home-content" class="wd-flex-grow-1">
+          <div class="position-sticky d-none d-sm-block">
+              <div class="title-content">
+                  <i class="fas fa-bars fa-lg"></i>
+                  <nav aria-label="breadcrumb">
+                      <ol class="breadcrumb m-2">
+                          <li class="breadcrumb-item"><a href="#">CS5610.123456</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Grades</li>
+                      </ol>
+                  </nav>
+              </div>
+          </div>
+  
+          <hr class="header-line"/>
+  
+          <div class="wd-flex-row-container">
+              <div id="navigation-sidebar" class="position-sticky d-none d-sm-block">
+                  <ul class="nav flex-column">
+  
+                      <li class="nav-item">
+                          <a class="nav-link" href="../Home/screen.html">
+                              Home
+                          </a>
+                      </li>
+  
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">
+                              Modules
+                          </a>
+                      </li>
+  
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">
+                              Piazza
+                          </a>
+                      </li>
+  
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">
+                              Zoom Meetings
+                          </a>
+                      </li>
+  
+                      <li class="nav-item">
+                          <a class="nav-link" href="../Assignments/index.html">
+                              Assignments
+                          </a>
+                      </li>
+  
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">
+                              Quizzes
+                          </a>
+                      </li>
+  
+                      <li class="nav-item">
+                          <a class="nav-link active" href="grades.html">
+                              Grades
+                          </a>
+                      </li>
+  
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">
+                              People
+                          </a>
+                      </li>
+  
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">
+                              Microsoft Teams Meetings
+                          </a>
+                      </li>
+  
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">
+                              FACT Reporting and Photo Roster
+                              <i class="fas fa-eye-slash float-end"></i>
+                          </a>
+                      </li>
+  
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">
+                              Discussions
+                              <i class="fas fa-eye-slash float-end"></i>
+                          </a>
+                      </li>
+  
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">
+                              Announcements
+                              <i class="fas fa-eye-slash float-end"></i>
+                          </a>
+                      </li>
+  
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">
+                              Pages
+                              <i class="fas fa-eye-slash float-end"></i>
+                          </a>
+                      </li>
+  
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">
+                              Files
+                              <i class="fas fa-eye-slash float-end"></i>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+  
+              <div id="home-content" class="wd-flex-grow-1">
+  
+                <div class="row mb-3">
+                  <div class="col-12 d-flex justify-content-end">
+                      <a href="#" class="btn btn-secondary me-1" role="button">
+                          <i class="fas fa-file-import"></i> Import
+                      </a>
+                      <a href="#" class="btn btn-secondary me-1" role="button">
+                          <i class="fas fa-file-export"></i> Export
+                      </a>
+                      <a href="#" class="btn btn-secondary me-1" role="button">
+                          <i class="fas fa-cog"></i>
+                      </a>
+                  </div>
+              </div>
+          
+              <div class="row mb-3">
+                  <div class="col-md-6 mb-2">
+                      <div class="input-group">
+                          <span class="input-group-text">
+                              <i class="fas fa-search"></i>
+                          </span>
+                          <select class="form-select" id="text-fields-student-name">
+                              <option selected disabled>Search Students</option>
+                              <option value="student1">Student 1</option>
+                              <option value="student2">Student 2</option>
+                          </select>
+                      </div>
+                  </div>
+                  <div class="col-md-6 mb-2">
+                      <div class="input-group">
+                          <span class="input-group-text">
+                              <i class="fas fa-search"></i>
+                          </span>
+                          <select class="form-select" id="text-fields-assignment-name">
+                              <option selected>Search Assignments</option>
+                          </select>
+                      </div>
+                  </div>
+              </div>
+          
+              <a href="#" class="btn btn-secondary mb-3" role="button">
+                  <i class="fas fa-filter"></i> Apply Filters
+              </a>
+
+              <div class="row">
+                <div class="col-12">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead class="table-secondary">
+                            <tr>
+                                <th>Student Name</th>
+                                <th>A1 SETUP Out of 100</th>
+                                <th>A2 HTML Out of 100</th>
+                                <th>A3 CSS Out of 100</th>
+                                <th>A4 BOOSTRAP Out of 100</th>
+                                <th>A5 JAVASCRIPT Out of 100</th>
+                                <th>A6 REACT Out of 100</th>
+                                <th>A7 REDUX Out of 100</th>
+                                <th>A8 Node Out of 100</th>
+                                
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="table-names text-danger">123</td>
+                                <td>98</td>
+                                <td>98</td>
+                                <td>89</td>
+                                <td>87</td>
+                                <td>87</td>
+                                <td>87</td>
+                                <td>87</td>
+                                <td>87</td>                                
+                            </tr>
+            
+                           <tr class="table-secondary">
+                                  <td class="table-names text-danger">456</td>
+                                  <td>98</td>
+                                  <td>89</td>
+                                  <td>87</td>
+                                  <td>87</td>
+                                  <td>87</td>
+                                  <td>87</td>
+                                  <td>87</td>
+                                  <td>87</td>
+                              </tr>
+                              <tr>
+                                  <td class="table-names text-danger">789</td>
+                                  <td>
+                                      <input type="email"
+                                             value="98"
+                                             id="text-fields-ls-a1"/>
+                                  </td>
+                                  <td>89</td>
+                                  <td>87</td>
+                                  <td>87</td>
+                                  <td>87</td>
+                                  <td>87</td>
+                                  <td>87</td>
+                                  <td>87</td>
+                              </tr>
+                              <tr class="table-secondary">
+                                  <td class="table-names text-danger">357</td>
+                                  <td>98</td>
+                                  <td>89</td>
+                                  <td>87</td>
+                                  <td>87</td>
+                                  <td>87</td>
+                                  <td>87</td>
+                                  <td>
+                                      <input type="email"
+                                             value="87"
+                                             id="text-fields-hs-a7"/>
+                                  </td>
+                                  <td>87</td>
+                              </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+  </div>
+  </body>
+  </html>
