@@ -9,7 +9,7 @@ function BooleanVariables() {
     let true4 = numberVariable === 123;
     let true5 = floatingPointNumber !== 321.432;
     let false3 = numberVariable < 100;
-    let sortaTrue = '1' == 1; // Never use this
+    let sortaTrue = '1' === 1; // Never use this
     let notTrue = '1' === 1; // Always use this
 
     return (
