@@ -1,0 +1,120 @@
+
+.wd-pub-buttons{
+    min-width:49%;
+    border-radius: 3px;
+    border:1px none #c7cdd1;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    padding:0px;
+}
+
+.wd-unpublish-button{
+    min-width:49%;
+    border-radius: 3px;
+    border:1px solid #c7cdd1;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    padding:0px;
+    background-color: #f5f5f5;
+}
+
+.wd-status-bar-list button{
+    display:block;
+    background-color: #f5f5f5;
+    border-color:#c7cdd1;
+    width:100%;
+    text-align: start;
+    padding-left: 30px;
+    margin:5px auto;
+}
+
+.wd-status-bar-list {
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+    width:100%;
+}
+
+.wd-status-bar{
+    width:90%;
+}
+
+.wd-status-bar-list button{
+    font-size: 90%;
+
+}
+
+.col-3.wd-status{
+    max-width:250px;
+    padding-left:0px;
+    padding-right:0px;
+
+    margin-left:15px;
+    margin-right:5px;
+}
+
+.col.wd-main-content{
+    max-width:85%;
+    min-width:550px;
+}
+
+.wd-todo-list h5{
+    marin:0px;
+    padding: 0px;
+}
+
+@media (max-width:1109px) {
+    .wd-status{
+        display: none;
+    }
+}
+
+.btn.wd-switch-buttons:hover{
+    background-color: #e8e8e8;
+    color:#2d3b45;
+}
+.btn.wd-switch-buttons{
+    border-radius: 3px;
+    margin-right:2px;
+    border:1px solid rgb(199, 205, 209);
+    background-color: #f5f5f5;
+    color:#2d3b45;
+    padding:2px 6px 2px 6px;
+    min-width:110px;
+    max-width:150px;
+    height:38px;
+}
+
+.btn.btn-danger{
+    min-width:108px;
+    max-width:150px;
+    height:38px;
+    margin-left:2px;
+    margin-right:2px;
+    border:1px solid rgb(199, 205, 209);
+    border-radius: 3px;
+}
+
+.dropdown{
+    display: flex;
+    height:38px;
+    min-width:108px;
+    max-width:150px !important;
+    margin:0px;
+    padding:0px;
+
+
+}
+.btn.wd-detail-btn{
+    max-width:30px;
+    min-width:unset;
+    height:38px;
+}
+
+.wd-buttons-container{
+    margin-top:5px;
+}
