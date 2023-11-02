@@ -1,0 +1,205 @@
+.border-left-active {
+    border-left-style: solid;
+    border-left-width: 4px;
+    border-left-color: green;
+}
+
+.col-breadcrumb {
+    width: 80%;
+}
+
+.breadcrumb-item a:hover {
+    color: #c70f02;
+}
+
+.student-view {
+    width: 12%;
+}
+
+.course-info {
+    font-size: small;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.dropdown-option {
+    background-color: #ebebeb;
+    width: 125px;
+}
+
+.collapse-all {
+    width: 110px;
+}
+
+.view-progress {
+    width: 130px;
+}
+
+.add-module {
+    color: white;
+    background-color: #c70f02;
+    width: 100px;
+}
+
+.vertical-ellipsis {
+    width: 20px;
+}
+
+.breadcrumb .before {
+    color: #7d7d7d;
+    font-size: small;
+    content: ">";
+    margin-top: 2px;
+}
+
+.breadcrumb .active:before {
+    color: #7d7d7d;
+    font-size: small;
+    content: ">";
+    margin-top: 2px;
+}
+
+.modules {
+    border-radius: 0px;
+}
+
+.modules .list-group-item {
+    color: #4d4d4d;
+}
+
+.modules .list-group-item a {
+    font-weight: normal;
+    color: #c70f02;
+}
+
+.publish {
+    width: 120px;
+}
+
+.home-option {
+    text-align: left;
+    width: 240px;
+}
+
+a {
+    color: #c70f02;
+}
+
+a:hover {
+    color: #c70f02;
+}
+
+.col-3 {
+    width: 20%;
+}
+
+/* assignments/index.html */
+
+.search {
+    width: 250px;
+}
+
+.add-group {
+    width: 100px;
+}
+
+.add-assignment {
+    color: white;
+    background-color: #c70f02;
+    width: 130px;
+}
+
+.assignment-buttons {
+    width: 26%;
+}
+
+.assignment-icons {
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.assignment-description {
+    width: 40%;
+}
+
+.assignment-end {
+    width: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.percentage {
+    font-size: smaller;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.assignments {
+    border-radius: 0px;
+}
+
+.assignments a {
+    color: black;
+}
+
+/* assignments/edit.html */
+
+.publish-status {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-ellipsis {
+    width: 5%;
+}
+
+.edit-description {
+    height: 10%;
+}
+
+.edit-input {
+    width: 70%;
+}
+
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.save {
+    color: white;
+    background-color: #c70f02;
+}
+
+/* grades/index.html */
+
+.grade-action {
+    width: 100px;
+}
+
+.gear {
+    width: 50px;
+}
+
+.name-header {
+    width: 20%;
+}
+
+.entry-header {
+    width: 8%;
+}
+
+table {
+    border: 1px solid #4d4d4d;
+}
+
+table .entry {
+    text-align: center;
+}

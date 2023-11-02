@@ -1,0 +1,26 @@
+.list-group > .list-group-item:first-child{
+    border-radius: 0px;
+}
+
+.list-group > .list-group-item:last-child{
+    border-radius: 0px;
+}
+
+.wd-assignment-item{
+    box-shadow: inset 4px 0px 0px 0px green;
+}
+
+.wd-assignment-title{
+    margin:7px 0px 0px 0px;
+    font-size:1.5rem;
+    padding:8px 15px 8px;
+}
+
+.form-control.wd-search-field{
+    width:40%;
+    max-width:350px;
+}
+
+.wd-top-buttons{
+    min-width:500px;
+}

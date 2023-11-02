@@ -1,0 +1,10 @@
+.hi {
+    background-color: aqua;
+}
+
+.color-white { color: white; }
+
+.font-slim { font-weight: 300; }
+.font-small { font-size: small; }
+
+.float-right { float: right; }

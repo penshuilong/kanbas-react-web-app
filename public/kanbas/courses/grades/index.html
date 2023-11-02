@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kanbas</title>
+    <link href="../../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/72ef95feaf.js" crossorigin="anonymous"></script>
+    <link href="../../styles.css" rel="stylesheet"/>
+    <link href="../courses.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="row">
+        <div class="col-1">
+            <ul class="list-group flex-column kanbas-nav">
+                <li class="list-group-item bg-color-black">
+                    <i class="fa-solid fa-n fa-4x color-red"></i></li>
+                <li class="list-group-item list-group-item-action bg-color-black">
+                    <i class="fa-solid fa-circle-user fa-2x color-grey"></i>
+                    <a href="/kanbas/account/profile/index.html">Account</a></li>
+                <li class="list-group-item list-group-item-action bg-color-black">
+                    <i class="fa-solid fa-gauge fa-2x"></i>
+                    <a href="/kanbas/dashboard/index.html">Dashboard</a></li>
+                <li class="list-group-item list-group-item-action bg-color-black active">
+                    <i class="fa-solid fa-book fa-2x"></i>
+                    <a href="/kanbas/courses/index.html">Courses</a></li>
+                <li class="list-group-item list-group-item-action bg-color-black">
+                    <i class="fa-regular fa-calendar-days fa-2x"></i>
+                    <a href="#">Calendar</a></li>
+                <li class="list-group-item list-group-item-action bg-color-black">
+                    <i class="fa-solid fa-inbox fa-2x"></i>
+                    <a href="#">Inbox</a></li>
+                <li class="list-group-item list-group-item-action bg-color-black">
+                    <i class="fa-regular fa-clock fa-2x"></i>
+                    <a href="#">History</a></li>
+                <li class="list-group-item list-group-item-action bg-color-black">
+                    <i class="fa-brands fa-square-youtube fa-2x"></i>
+                    <a href="#">Studio</a></li>
+                <li class="list-group-item list-group-item-action bg-color-black">
+                    <i class="fa-regular fa-circle-right fa-2x"></i>
+                    <a href="#">Commons</a></li>
+                <li class="list-group-item list-group-item-action bg-color-black">
+                    <i class="fa-regular fa-circle-question fa-2x"></i>
+                    <a href="#">Help</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <div class="row pt-3 ps-4">
+                <div class="col-1">
+                    <i class="fa-solid fa-bars fa-2x color-darker-red"></i>
+                </div>
+                <div class="col-9 mt-1 col-breadcrumb">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#" class="color-darker-red">CS5610.11744.202310</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Grades</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <hr class="ms-4 mt-0 me-4">
+            <div class="row">
+                <div class="col-2 secondary-nav">
+                    <div class="course-info ms-5 mb-2 color-darker-grey font-italic">
+                        202310_2 Fall 2022 Semester
+                    </div>
+                    <ul>
+                        <li><a href="/kanbas/courses/index.html">Home</a></li>
+                        <li><a href="#">Modules</a></li>
+                        <li><a href="#">Piazza</a></li>
+                        <li><a href="#">Zoom Meetings</a></li>
+                        <li><a href="/kanbas/courses/assignments/index.html">Assignments</a></li>
+                        <li><a href="#">Quizzes</a></li>
+                        <li class="active"><a href="/kanbas/courses/grades/index.html" class="active-link">Grades</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">Panopto Video</a></li>
+                        <li><a href="#">Discussions</a></li>
+                        <li><a href="#">Announcements</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Files</a></li>
+                        <li><a href="#">Rubrics</a></li>
+                        <li><a href="#">Outcomes</a></li>
+                        <li><a href="#">Collaborations</a></li>
+                        <li><a href="#">Syllabus</a></li>
+                        <li><a href="#">Progress Reports (EAB Navigate)</a></li>
+                        <li><a href="#">Settings</a></li>
+                    </ul> 
+                </div>
+                <div class="col">
+                    <div class="row float-end mb-3 me-4">
+                        <a href="#" class="btn grade-action">
+                            <i class="fa-solid fa-file-import color-medium-grey me-1"></i>
+                            Import</a>
+                        <select class="form-select ms-1 grade-action">
+                            <option selected value="EXPORT">
+                                <i class="fa-solid fa-file-export"></i> <!-- TODO: add export icon -->
+                                Export</option></select>
+                        <a href="#" class="btn ms-1 pe-3 gear">
+                            <i class="fa-solid fa-gear"></i></a>
+                    </div>
+                    <div class="row me-4">
+                        <div class="col">
+                            <h5 class="mt-1">Student Names</h5>
+                        </div>
+                        <div class="col">
+                            <h5 class="mt-1">Assignment Names</h5>
+                        </div>
+                    </div>
+                    <div class="row me-4">
+                        <div class="col">
+                            <select class="form-select">
+                                <option selected disabled value="PLACEHOLDER">
+                                    <i class="fa-solid fa-file-export"></i> <!-- TODO: add search icon -->
+                                    Search Students</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <select class="form-select">
+                                <option selected disabled value="PLACEHOLDER">
+                                    <i class="fa-solid fa-file-export"></i> <!-- TODO: add search icon -->
+                                    Search Assignments</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row me-4">
+                        <div class="col">
+                            <a href="#" class="btn mt-3">
+                                <i class="fa-solid fa-filter color-medium-grey"></i>
+                                Apply Filters</a>
+                        </div>
+                    </div>
+                    <div class="row me-4 mt-3">
+                        <table class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th class="name-header">Student Name</th>
+                                    <td class="entry-header entry">A1 SETUP<br/>Out of 100</td>
+                                    <td class="entry-header entry">A2 HTML<br/>Out of 100</td>
+                                    <td class="entry-header entry">A3 CSS<br/>Out of 100</td>
+                                    <td class="entry-header entry">A4 BOOTSTRAP<br/>Out of 100</td>
+                                    <td class="entry-header entry">A5 JAVASCRIPT<br/>Out of 100</td>
+                                    <td class="entry-header entry">A6 REACT<br/>Out of 100</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Alice Wonderland</td>
+                                    <td class="entry">98%</td>
+                                    <td class="entry">89%</td>
+                                    <td class="entry">87%</td>
+                                    <td class="entry">90%</td>
+                                    <td class="entry">92%</td>
+                                    <td class="entry">95%</td>
+                                </tr>
+                                <tr>
+                                    <td>Princess Leia</td>
+                                    <td class="entry">98%</td>
+                                    <td class="entry">80%</td>
+                                    <td class="entry">87%</td>
+                                    <td class="entry">86%</td>
+                                    <td class="entry">90%</td>
+                                    <td class="entry">88%</td>
+                                </tr>
+                                <tr>
+                                    <td>Luke Skywalker</td>
+                                    <td>
+                                        <input type="text" class="form-control entry" value="99%"/>
+                                    </td>
+                                    <td class="entry">88%</td>
+                                    <td class="entry">97%</td>
+                                    <td class="entry">82%</td>
+                                    <td class="entry">91%</td>
+                                    <td class="entry">93%</td>
+                                </tr>
+                                <tr>
+                                    <td>Han Solo</td>
+                                    <td class="entry">83%</td>
+                                    <td class="entry">99%</td>
+                                    <td class="entry">94%</td>
+                                    <td class="entry">98%</td>
+                                    <td class="entry">96%</td>
+                                    <td class="entry">92%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+.table *{
+    border:1px solid #c7cdd1 ;
+}
+
+.wd-top-buttons{
+    margin:8px 0px 8px 0px;
+}
+
+.btn.wd-switch-buttons.wd-gear-btn{
+    max-width:70px;
+    min-width: unset;
+    margin-left:15px;
+}

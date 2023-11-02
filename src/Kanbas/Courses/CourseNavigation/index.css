@@ -1,0 +1,23 @@
+.list-group-item.wd-expanded-nav {
+    border: none;
+    padding:5px 16px 5px 16px;
+    color:#b52828;
+    font-family: sans-serif;
+}
+
+.list-group-item.wd-expanded-nav:first-child{
+    border-radius: 0px;
+}
+
+.list-group-item.wd-expanded-nav:last-child{
+    border-radius: 0px;
+}
+
+.list-group-item.wd-expanded-nav.active{
+    border-left:2px solid black;
+    background-color: white;
+    color:black;
+    font-weight: bold;
+    padding-left:14px;
+}
+

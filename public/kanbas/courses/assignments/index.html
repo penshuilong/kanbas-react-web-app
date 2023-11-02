@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kanbas</title>
+    <link href="../../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/72ef95feaf.js" crossorigin="anonymous"></script>
+    <link href="../../styles.css" rel="stylesheet"/>
+    <link href="../courses.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="row">
+        <div class="col-1">
+            <ul class="list-group flex-column kanbas-nav">
+                <li class="list-group-item bg-color-black">
+                    <i class="fa-solid fa-n fa-4x color-red"></i></li>
+                <li class="list-group-item list-group-item-action bg-color-black">
+                    <i class="fa-solid fa-circle-user fa-2x color-grey"></i>
+                    <a href="/kanbas/account/profile/index.html">Account</a></li>
+                <li class="list-group-item list-group-item-action bg-color-black">
+                    <i class="fa-solid fa-gauge fa-2x"></i>
+                    <a href="/kanbas/dashboard/index.html">Dashboard</a></li>
+                <li class="list-group-item list-group-item-action bg-color-black active">
+                    <i class="fa-solid fa-book fa-2x"></i>
+                    <a href="/kanbas/courses/index.html">Courses</a></li>
+                <li class="list-group-item list-group-item-action bg-color-black">
+                    <i class="fa-regular fa-calendar-days fa-2x"></i>
+                    <a href="#">Calendar</a></li>
+                <li class="list-group-item list-group-item-action bg-color-black">
+                    <i class="fa-solid fa-inbox fa-2x"></i>
+                    <a href="#">Inbox</a></li>
+                <li class="list-group-item list-group-item-action bg-color-black">
+                    <i class="fa-regular fa-clock fa-2x"></i>
+                    <a href="#">History</a></li>
+                <li class="list-group-item list-group-item-action bg-color-black">
+                    <i class="fa-brands fa-square-youtube fa-2x"></i>
+                    <a href="#">Studio</a></li>
+                <li class="list-group-item list-group-item-action bg-color-black">
+                    <i class="fa-regular fa-circle-right fa-2x"></i>
+                    <a href="#">Commons</a></li>
+                <li class="list-group-item list-group-item-action bg-color-black">
+                    <i class="fa-regular fa-circle-question fa-2x"></i>
+                    <a href="#">Help</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <div class="row pt-3 ps-4">
+                <div class="col-1">
+                    <i class="fa-solid fa-bars fa-2x color-darker-red"></i>
+                </div>
+                <div class="col-9 mt-1 col-breadcrumb">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#" class="color-darker-red">CS5610.11744.202310</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="col-2 ms-0 student-view">
+                    <a href="#" class="btn">
+                        <i class="fa-solid fa-glasses"></i>
+                        Student View</a>
+                </div>
+            </div>
+            <hr class="ms-4 mt-0 me-4">
+            <div class="row">
+                <div class="col-2 secondary-nav">
+                    <div class="course-info ms-5 mb-2 color-darker-grey font-italic">
+                        202310_2 Fall 2022 Semester
+                    </div>
+                    <ul>
+                        <li><a href="/kanbas/courses/index.html">Home</a></li>
+                        <li><a href="#">Modules</a></li>
+                        <li><a href="#">Piazza</a></li>
+                        <li><a href="#">Zoom Meetings</a></li>
+                        <li class="active"><a href="/kanbas/courses/assignments/index.html" class="active-link">Assignments</a></li>
+                        <li><a href="#">Quizzes</a></li>
+                        <li><a href="/kanbas/courses/grades/index.html">Grades</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">Panopto Video</a></li>
+                        <li><a href="#">Discussions</a></li>
+                        <li><a href="#">Announcements</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Files</a></li>
+                        <li><a href="#">Rubrics</a></li>
+                        <li><a href="#">Outcomes</a></li>
+                        <li><a href="#">Collaborations</a></li>
+                        <li><a href="#">Syllabus</a></li>
+                        <li><a href="#">Progress Reports (EAB Navigate)</a></li>
+                        <li><a href="#">Settings</a></li>
+                    </ul> 
+                </div>
+                <div class="col me-4">
+                    <div class="row mb-3">
+                        <div class="col"> 
+                            <input type="text" class="form-control search" placeholder="Search for Assignment"/>
+                        </div>
+                        <div class="col-4 assignment-buttons">
+                            <a href="#" class="btn ms-1 add-group">
+                                <i class="fa-solid fa-plus"></i>
+                                Group</a>
+                            <a href="#" class="btn btn-danger ms-1 add-assignment">
+                                <i class="fa-solid fa-plus color-white"></i>
+                                Assignment</a>
+                            <a href="#" class="btn ms-1 vertical-ellipsis pe-3">
+                                <i class="fa-solid fa-ellipsis-vertical color-darker-grey color-black"></i></a>
+                        </div>
+                    </div>
+                    <hr>
+                    <ul class="list-group flex-column assignments">
+                        <li class="list-group-item list-group-item-secondary font-bold assignment-header">
+                            <i class="fa-solid fa-grip-vertical color-medium-grey"></i>
+                            <i class="fa-solid fa-caret-down color-darker-grey ms-2 me-2"></i>
+                            Assignments
+                            <div class="float-end">
+                                <a href="#" class="btn percentage">40% of Total</a>
+                                <i class="fa-solid fa-plus color-medium-grey ms-3"></i>
+                                <i class="fa-solid fa-ellipsis-vertical color-medium-grey ms-3"></i>
+                            </div></li>
+                        <li class="list-group-item border-left-active">
+                            <div class="row">
+                                <div class="col-1 assignment-icons pe-0">
+                                    <i class="fa-solid fa-grip-vertical color-medium-grey me-1"></i>
+                                    <i class="fa-solid fa-file-pen color-success ms-2"></i>
+                                </div>
+                                <div class="col">
+                                    <a href="/kanbas/courses/assignments/edit.html" class="mb-0">A1 SETUP</a>
+                                    <p class="mb-0 color-medium-grey font-small">Week 0 - SETUP - Week starting on Monday September 5th (9/5/2022) Module |</p>
+                                    <p class="mb-0 color-medium-grey font-small"><b>Due</b> Sep 18, 2022 at 11:59pm | 100 pts</p>
+                                </div>
+                                <div class="col-1 assignment-end float-end">
+                                    <i class="fa-solid fa-circle-check color-green"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical color-medium-grey ms-3"></i>
+                                </div>
+                            </div></li>
+                        <li class="list-group-item border-left-active">
+                            <div class="row">
+                                <div class="col-1 assignment-icons pe-0">
+                                    <i class="fa-solid fa-grip-vertical color-medium-grey me-1"></i>
+                                    <i class="fa-solid fa-file-pen color-success ms-2"></i>
+                                </div>
+                                <div class="col">
+                                    <a href="/kanbas/courses/assignments/edit.html" class="mb-0">A2 HTML</a>
+                                    <p class="mb-0 color-medium-grey font-small">Week 1 - HTML - Week starting on Monday September 12th (9/12/2022) Module |</p>
+                                    <p class="mb-0 color-medium-grey font-small">Due Sep 25, 2022 at 11:59pm | 100 pts</p>
+                                </div>
+                                <div class="col-1 assignment-end float-end">
+                                    <i class="fa-solid fa-circle-check color-green"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical color-medium-grey ms-3"></i>
+                                </div>
+                            </div></li>
+                        <li class="list-group-item border-left-active">
+                            <div class="row">
+                                <div class="col-1 assignment-icons pe-0">
+                                    <i class="fa-solid fa-grip-vertical color-medium-grey me-1"></i>
+                                    <i class="fa-solid fa-file-pen color-success ms-2"></i>
+                                </div>
+                                <div class="col">
+                                    <a href="/kanbas/courses/assignments/edit.html" class="mb-0">A3 CSS</a>
+                                    <p class="mb-0 color-medium-grey font-small">Week 2 - CSS - Week starting on Monday September 19th (9/19/2022) Module |</p>
+                                    <p class="mb-0 color-medium-grey font-small"><b>Due</b> Oct 2, 2022 at 11:59pm | 100 pts</p>
+                                </div>
+                                <div class="col-1 assignment-end float-end">
+                                    <i class="fa-solid fa-circle-check color-green"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical color-medium-grey ms-3"></i>
+                                </div>
+                            </div></li>
+                        <li class="list-group-item border-left-active">
+                            <div class="row">
+                                <div class="col-1 assignment-icons pe-0">
+                                    <i class="fa-solid fa-grip-vertical color-medium-grey me-1"></i>
+                                    <i class="fa-solid fa-file-pen color-success ms-2"></i>
+                                </div>
+                                <div class="col">
+                                    <a href="/kanbas/courses/assignments/edit.html" class="mb-0">A4 BOOTSTRAP</a>
+                                    <p class="mb-0 color-medium-grey font-small">Week 3 - Bootstrap - Week starting on Monday September 26th (9/26/2022) Module |</p>
+                                    <p class="mb-0 color-medium-grey font-small"><b>Due</b> Oct 10, 2022 at 11:59pm | 100 pts</p>
+                                </div>
+                                <div class="col-1 assignment-end float-end">
+                                    <i class="fa-solid fa-circle-check color-green"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical color-medium-grey ms-3"></i>
+                                </div>
+                            </div></li>
+                        <li class="list-group-item border-left-active">
+                            <div class="row">
+                                <div class="col-1 assignment-icons pe-0">
+                                    <i class="fa-solid fa-grip-vertical color-medium-grey me-1"></i>
+                                    <i class="fa-solid fa-file-pen color-success ms-2"></i>
+                                </div>
+                                <div class="col">
+                                    <a href="/kanbas/courses/assignments/edit.html" class="mb-0">A5 JAVASCRIPT</a>
+                                    <p class="mb-0 color-medium-grey font-small">Week 4 - JavaScript - Week starting on Monday October 3rd (10/3/2022) Module |</p>
+                                    <p class="mb-0 color-medium-grey font-small"><b>Due</b> Oct 16, 2022 at 11:59pm | 100 pts</p>
+                                </div>
+                                <div class="col-1 assignment-end float-end">
+                                    <i class="fa-solid fa-circle-check color-green"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical color-medium-grey ms-3"></i>
+                                </div>
+                            </div></li>
+                        <li class="list-group-item border-left-active">
+                            <div class="row">
+                                <div class="col-1 assignment-icons pe-0">
+                                    <i class="fa-solid fa-grip-vertical color-medium-grey me-1"></i>
+                                    <i class="fa-solid fa-file-pen color-success ms-2"></i>
+                                </div>
+                                <div class="col">
+                                    <a href="/kanbas/courses/assignments/edit.html" class="mb-0">A6 REACT</a>
+                                    <p class="mb-0 color-medium-grey font-small">Week 5 - React & Routing - Week starting on Monday October 10th (10/10/2022) Module |</p>
+                                    <p class="mb-0 color-medium-grey font-small"><b>Due</b> Oct 23, 2022 at 11:59pm | 100 pts</p>
+                                </div>
+                                <div class="col-1 assignment-end float-end">
+                                    <i class="fa-solid fa-circle-check color-green"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical color-medium-grey ms-3"></i>
+                                </div>
+                            </div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
