@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kanbas</title>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/72ef95feaf.js" crossorigin="anonymous"></script>
+    <link href="../styles.css" rel="stylesheet"/>
+    <link href="courses.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="row">
+        <div class="col-1">
+            <ul class="list-group flex-column kanbas-nav">
+                <li class="list-group-item bg-color-black">
+                    <i class="fa-solid fa-n fa-4x color-red"></i></li>
+                <li class="list-group-item list-group-item-action bg-color-black">
+                    <i class="fa-solid fa-circle-user fa-2x color-grey"></i>
+                    <a href="/kanbas/account/profile/index.html">Account</a></li>
+                <li class="list-group-item list-group-item-action bg-color-black">
+                    <i class="fa-solid fa-gauge fa-2x"></i>
+                    <a href="/kanbas/dashboard/index.html">Dashboard</a></li>
+                <li class="list-group-item list-group-item-action bg-color-black active">
+                    <i class="fa-solid fa-book fa-2x"></i>
+                    <a href="/kanbas/courses/index.html">Courses</a></li>
+                <li class="list-group-item list-group-item-action bg-color-black">
+                    <i class="fa-regular fa-calendar-days fa-2x"></i>
+                    <a href="#">Calendar</a></li>
+                <li class="list-group-item list-group-item-action bg-color-black">
+                    <i class="fa-solid fa-inbox fa-2x"></i>
+                    <a href="#">Inbox</a></li>
+                <li class="list-group-item list-group-item-action bg-color-black">
+                    <i class="fa-regular fa-clock fa-2x"></i>
+                    <a href="#">History</a></li>
+                <li class="list-group-item list-group-item-action bg-color-black">
+                    <i class="fa-brands fa-square-youtube fa-2x"></i>
+                    <a href="#">Studio</a></li>
+                <li class="list-group-item list-group-item-action bg-color-black">
+                    <i class="fa-regular fa-circle-right fa-2x"></i>
+                    <a href="#">Commons</a></li>
+                <li class="list-group-item list-group-item-action bg-color-black">
+                    <i class="fa-regular fa-circle-question fa-2x"></i>
+                    <a href="#">Help</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <div class="row pt-3 ps-4">
+                <div class="col-1">
+                    <i class="fa-solid fa-bars fa-2x color-darker-red"></i>
+                </div>
+                <div class="col-9 mt-1 col-breadcrumb">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#" class="color-darker-red">CS4550.12631.202410</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Home</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="col-2 ms-0 student-view">
+                    <a href="#" class="btn">
+                        <i class="fa-solid fa-glasses"></i>
+                        Student View</a>
+                </div>
+            </div>
+            <hr class="ms-4 mt-0 me-4">
+            <div class="row"> 
+                <div class="col-2 secondary-nav">
+                    <div class="course-info ms-5 mb-2 color-darker-grey font-italic">
+                        202410_1 Fall 2023 Semester
+                    </div>
+                    <ul>
+                        <li class="active"><a href="/kanbas/courses/index.html" class="active-link">Home</a></li>
+                        <li><a href="#">Modules</a></li>
+                        <li><a href="#">Piazza</a></li>
+                        <li><a href="#">Zoom Meetings</a></li>
+                        <li><a href="/kanbas/courses/assignments/index.html">Assignments</a></li>
+                        <li><a href="#">Quizzes</a></li>
+                        <li><a href="/kanbas/courses/grades/index.html">Grades</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">Panopto Video</a></li>
+                        <li><a href="#">Discussions</a></li>
+                        <li><a href="#">Announcements</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Files</a></li>
+                        <li><a href="#">Rubrics</a></li>
+                        <li><a href="#">Outcomes</a></li>
+                        <li><a href="#">Collaborations</a></li>
+                        <li><a href="#">Syllabus</a></li>
+                        <li><a href="#">Progress Reports (EAB Navigate)</a></li>
+                        <li><a href="#">Settings</a></li>
+                    </ul> 
+                </div>
+                <div class="col">
+                    <div class="row float-end mb-3">
+                        <a href="#" class="btn collapse-all">
+                            Collapse All</a>
+                        <a href="#" class="btn ms-1 view-progress">
+                            View Progress</a>
+                        <select class="form-select ms-1 dropdown-option">
+                            <option selected value="PUBLISH-ALL">
+                                <i class="fa-regular fa-circle-check color-green"></i> <!-- TODO: add circle check -->
+                                Publish All</option></select>
+                        <a href="#" class="btn btn-danger ms-1 add-module">
+                            <i class="fa-solid fa-plus color-white"></i>
+                            Module</a>
+                        <a href="#" class="btn ms-1 vertical-ellipsis pe-3">
+                            <i class="fa-solid fa-ellipsis-vertical color-darker-grey color-black"></i></a>
+                    </div>
+                    <hr>
+                    <ul class="list-group flex-column modules">
+                        <li class="list-group-item list-group-item-secondary font-bold">
+                            <i class="fa-solid fa-grip-vertical color-medium-grey"></i>
+                            <i class="fa-solid fa-caret-down color-darker-grey ms-2 me-2"></i>
+                            Week 0 - INTRO
+                            <div class="float-end">
+                                <i class="fa-solid fa-circle-check color-green"></i>
+                                <i class="fa-solid fa-caret-down color-darker-grey"></i>
+                                <i class="fa-solid fa-plus color-medium-grey ms-3"></i>
+                                <i class="fa-solid fa-ellipsis-vertical color-medium-grey ms-3"></i>
+                            </div></li>
+                        <li class="list-group-item border-left-active">
+                            <i class="fa-solid fa-grip-vertical color-medium-grey me-2"></i>
+                            LEARNING OBJECTIVES
+                            <div class="float-end">
+                                <i class="fa-solid fa-circle-check color-green"></i>
+                                <i class="fa-solid fa-ellipsis-vertical color-medium-grey ms-3"></i>
+                            </div></li>
+                        <li class="list-group-item border-left-active">
+                            <i class="fa-solid fa-grip-vertical color-medium-grey me-5"></i>
+                            Introduction to the course
+                            <div class="float-end">
+                                <i class="fa-solid fa-circle-check color-green"></i>
+                                <i class="fa-solid fa-ellipsis-vertical color-medium-grey ms-3"></i>
+                            </div></li>
+                        <li class="list-group-item border-left-active">
+                            <i class="fa-solid fa-grip-vertical color-medium-grey me-5"></i>
+                            Learn what is Web Development
+                            <div class="float-end">
+                                <i class="fa-solid fa-circle-check color-green"></i>
+                                <i class="fa-solid fa-ellipsis-vertical color-medium-grey ms-3"></i>
+                            </div></li>
+                        <li class="list-group-item border-left-active">
+                            <i class="fa-solid fa-grip-vertical color-medium-grey me-5"></i>
+                            Creating a development environment
+                            <div class="float-end">
+                                <i class="fa-solid fa-circle-check color-green"></i>
+                                <i class="fa-solid fa-ellipsis-vertical color-medium-grey ms-3"></i>
+                            </div></li>
+                        <li class="list-group-item border-left-active">
+                            <i class="fa-solid fa-grip-vertical color-medium-grey me-5"></i>
+                            Creating a Web Application
+                            <div class="float-end">
+                                <i class="fa-solid fa-circle-check color-green"></i>
+                                <i class="fa-solid fa-ellipsis-vertical color-medium-grey ms-3"></i>
+                            </div></li>
+                        <li class="list-group-item border-left-active">
+                            <i class="fa-solid fa-grip-vertical color-medium-grey me-5"></i>
+                            Getting started with the 1st assignment
+                            <div class="float-end">
+                                <i class="fa-solid fa-circle-check color-green"></i>
+                                <i class="fa-solid fa-ellipsis-vertical color-medium-grey ms-3"></i>
+                            </div></li>
+                        <li class="list-group-item border-left-active">
+                            <i class="fa-solid fa-grip-vertical color-medium-grey me-2"></i>
+                            READING
+                            <div class="float-end">
+                                <i class="fa-solid fa-circle-check color-green"></i>
+                                <i class="fa-solid fa-ellipsis-vertical color-medium-grey ms-3"></i>
+                            </div></li>
+                        <li class="list-group-item border-left-active">
+                            <i class="fa-solid fa-grip-vertical color-medium-grey me-5"></i>
+                            Full Stack Developer - Chapter 1 - Introduction
+                            <div class="float-end">
+                                <i class="fa-solid fa-circle-check color-green"></i>
+                                <i class="fa-solid fa-ellipsis-vertical color-medium-grey ms-3"></i>
+                            </div></li>
+                        <li class="list-group-item border-left-active">
+                            <i class="fa-solid fa-grip-vertical color-medium-grey me-5"></i>
+                            Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML
+                            <div class="float-end">
+                                <i class="fa-solid fa-circle-check color-green"></i>
+                                <i class="fa-solid fa-ellipsis-vertical color-medium-grey ms-3"></i>
+                            </div></li>
+                        <li class="list-group-item border-left-active">
+                            <i class="fa-solid fa-grip-vertical color-medium-grey me-2"></i>
+                            SLIDES
+                            <div class="float-end">
+                                <i class="fa-solid fa-circle-check color-green"></i>
+                                <i class="fa-solid fa-ellipsis-vertical color-medium-grey ms-3"></i>
+                            </div></li>
+                        <li class="list-group-item border-left-active">
+                            <i class="fa-solid fa-grip-vertical color-medium-grey"></i>
+                            <i class="fa-solid fa-link color-success ms-2 me-2"></i>
+                            <a href="#">Introduction to Web Development <i class="fa-solid fa-arrow-up-right-from-square color-darker-red ms-2" href="#"></i></a>
+                            <div class="float-end">
+                                <i class="fa-solid fa-circle-check color-green"></i>
+                                <i class="fa-solid fa-ellipsis-vertical color-medium-grey ms-3"></i>
+                            </div></li>
+                        <li class="list-group-item border-left-active">
+                            <i class="fa-solid fa-grip-vertical color-medium-grey"></i>
+                            <i class="fa-solid fa-link color-success ms-2 me-2"></i>
+                            <a href="#">Creating an HTTP server with Node.js <i class="fa-solid fa-arrow-up-right-from-square color-darker-red ms-2" href="#"></i></a>
+                            <div class="float-end">
+                                <i class="fa-solid fa-circle-check color-green"></i>
+                                <i class="fa-solid fa-ellipsis-vertical color-medium-grey ms-3"></i>
+                            </div></li>
+                        <li class="list-group-item border-left-active">
+                            <i class="fa-solid fa-grip-vertical color-medium-grey"></i>
+                            <i class="fa-solid fa-link color-success ms-2 me-2"></i>
+                            <a href="#">Creating a React Application <i class="fa-solid fa-arrow-up-right-from-square color-darker-red ms-2" href="#"></i></a>
+                            <div class="float-end">
+                                <i class="fa-solid fa-circle-check color-green"></i>
+                                <i class="fa-solid fa-ellipsis-vertical color-medium-grey ms-3"></i>
+                            </div></li>
+                    </ul>
+
+                    <ul class="list-group flex-column modules mt-3">
+                        <li class="list-group-item list-group-item-secondary font-bold">
+                            <i class="fa-solid fa-grip-vertical color-medium-grey"></i>
+                            <i class="fa-solid fa-caret-down ms-2 me-2"></i>
+                            Week 1 - HTML
+                            <div class="float-end">
+                                <i class="fa-solid fa-circle-check color-green"></i>
+                                <i class="fa-solid fa-caret-down color-darker-grey"></i>
+                                <i class="fa-solid fa-plus color-medium-grey ms-3"></i>
+                                <i class="fa-solid fa-ellipsis-vertical color-medium-grey ms-3"></i>
+                            </div></li>
+                        <li class="list-group-item border-left-active">
+                            <i class="fa-solid fa-grip-vertical color-medium-grey me-2"></i>
+                            LEARNING OBJECTIVES
+                            <div class="float-end">
+                                <i class="fa-solid fa-circle-check color-green"></i>
+                                <i class="fa-solid fa-ellipsis-vertical color-medium-grey ms-3"></i>
+                            </div></li>
+                        <li class="list-group-item border-left-active">
+                            <i class="fa-solid fa-grip-vertical color-medium-grey me-5"></i>
+                            Learn how to create user interfaces with HTML
+                            <div class="float-end">
+                                <i class="fa-solid fa-circle-check color-green"></i>
+                                <i class="fa-solid fa-ellipsis-vertical color-medium-grey ms-3"></i>
+                            </div></li>
+                        <li class="list-group-item border-left-active">
+                            <i class="fa-solid fa-grip-vertical color-medium-grey me-5"></i>
+                            Keep working on assignment 1
+                            <div class="float-end">
+                                <i class="fa-solid fa-circle-check color-green"></i>
+                                <i class="fa-solid fa-ellipsis-vertical color-medium-grey ms-3"></i>
+                            </div></li>
+                        <li class="list-group-item border-left-active">
+                            <i class="fa-solid fa-grip-vertical color-medium-grey me-5"></i>
+                            Deploy the assignment to Netlify
+                            <div class="float-end">
+                                <i class="fa-solid fa-circle-check color-green"></i>
+                                <i class="fa-solid fa-ellipsis-vertical color-medium-grey ms-3"></i>
+                            </div></li>
+                        <li class="list-group-item border-left-active">
+                            <i class="fa-solid fa-grip-vertical color-medium-grey me-2"></i>
+                            READING
+                            <div class="float-end">
+                                <i class="fa-solid fa-circle-check color-green"></i>
+                                <i class="fa-solid fa-ellipsis-vertical color-medium-grey ms-3"></i>
+                            </div></li>
+                        <li class="list-group-item border-left-active">
+                            <i class="fa-solid fa-grip-vertical color-medium-grey me-5"></i>
+                            Full Stack Developer - Chapter 1 - Introduction
+                            <div class="float-end">
+                                <i class="fa-solid fa-circle-check color-green"></i>
+                                <i class="fa-solid fa-ellipsis-vertical color-medium-grey ms-3"></i>
+                            </div></li>
+                        <li class="list-group-item border-left-active">
+                            <i class="fa-solid fa-grip-vertical color-medium-grey me-5"></i>
+                            Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML
+                            <div class="float-end">
+                                <i class="fa-solid fa-circle-check color-green"></i>
+                                <i class="fa-solid fa-ellipsis-vertical color-medium-grey ms-3"></i>
+                            </div></li>
+                    </ul>
+                </div>
+                <div class="col-3 ms-4">
+                    <h5 class="mt-2 color-darker-grey">Course Status</h5>
+                    <span>
+                        <a href="#" class="btn color-darker-grey publish">
+                            <i class="fa-solid fa-ban color-medium-grey"></i>
+                            Unpublish</a>
+                        <a href="#" class="btn btn-success disabled publish">
+                            <i class="fa-solid fa-circle-check color-white"></i>
+                            Published</a>
+                    </span>
+                    <a href="#" class="btn color-darker-grey mt-3 home-option">
+                        <i class="fa-solid fa-file-import color-medium-grey"></i>
+                        Import Existing Content</a>
+                    <a href="#" class="btn color-darker-grey mt-1 home-option">
+                        <i class="fa-regular fa-circle-right color-medium-grey"></i>
+                        Import From Commons</a>
+                    <a href="#" class="btn color-darker-grey mt-1 home-option">
+                        <i class="fa-solid fa-life-ring color-medium-grey"></i>
+                        Choose Home Page</a>
+                    <a href="#" class="btn color-darker-grey mt-1 home-option">
+                        <i class="fa-solid fa-chart-simple color-medium-grey"></i>
+                        View Course Stream</a>
+                    <a href="#" class="btn color-darker-grey mt-1 home-option">
+                        <i class="fa-solid fa-bullhorn color-medium-grey"></i>
+                        New Announcement</a>
+                    <a href="#" class="btn color-darker-grey mt-1 home-option">
+                        <i class="fa-solid fa-chart-simple color-medium-grey"></i>
+                        New Analytics</a>
+                    <a href="#" class="btn color-darker-grey mt-1 home-option">
+                        <i class="fa-regular fa-bell color-medium-grey"></i>
+                        View Course Notifications</a>
+                    <h5 class="mt-3 color-darker-grey font-bold">To Do</h5>
+                    <hr class="mt-1 me-3 mb-1">
+                    <span>
+                        <i class="fa-solid fa-circle-exclamation color-darker-red ms-4"></i>
+                        <a href="#" class="ms-1 font-small">Grade A1 - ENV + HTML</a>
+                        <i class="fa-solid fa-x color-medium-grey ms-4"></i>
+                        <p class="ms-5 color-medium-grey font-small">100 points . Sep 18 at 11:59pm</p>
+                    </span>
+                    <span>
+                        <h5 class="mt-3 color-darker-grey font-bold">Coming Up</h5>
+                        <i class="fa-regular fa-calendar color-medium-grey"></i>
+                        <a href="#" class="ms-1 font-small">View Calendar</a>
+                    </span>
+                    <hr class="mt-1 me-3 mb-1">
+                    <span>
+                        <i class="fa-regular fa-calendar color-medium-grey"></i>
+                        <a href="#" class="ms-1 font-small">Lecture</a>
+                        <p class="ms-4 mb-0 color-medium-grey font-small">CS4550.12631.202410</p>
+                        <p class="ms-4 color-medium-grey font-small">Sep 11 at 11:45am</p>
+                    </span>
+                    <span>
+                        <i class="fa-regular fa-calendar color-medium-grey"></i>
+                        <a href="#" class="ms-1 font-small">CS5610 06 SP23 Lecture</a>
+                        <p class="ms-4 mb-0 color-medium-grey font-small">CS4550.12631.202410</p>
+                        <p class="ms-4 color-medium-grey font-small">Sep 11 at 6pm</p>
+                    </span>
+                    <span>
+                        <i class="fa-regular fa-calendar color-medium-grey"></i>
+                        <a href="#" class="ms-1 mb-0 font-small">CS5610 Web Development</a><br/>
+                        <a href="#" class="ms-4 mt-0 font-small">Summer 1 2023 - LECTURE</a>
+                        <p class="ms-4 mb-0 color-medium-grey font-small">CS4550.12631.202410</p>
+                        <p class="ms-4 color-medium-grey font-small">Sep 11 at 7pm</p>
+                    </span>
+                    <a href="#" class="font-small">12 more in the next week ...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

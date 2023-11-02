@@ -1,0 +1,15 @@
+[
+    { "_id": "19753",
+      "name": "Web Development", "number": "CS4550", 
+      "startDate": "2023-09-06", "endDate": "2023-12-06"
+    },
+    { "_id": "16840",
+      "name": "Theory of Computation", "number": "CS3800", 
+      "startDate": "2023-09-06", "endDate": "2023-12-06"
+    },
+    { "_id": "12075",
+      "name": "Public Speaking", "number": "COMM1112", 
+      "startDate": "2023-09-06", "endDate": "2023-12-06"
+    }
+  ]
+  

@@ -1,0 +1,148 @@
+[
+    {
+        "_id": "M10",
+        "name": "Week 0 - INTRO",
+        "description": "Introduction to the course",
+        "course": "19753",
+        "lessons": [
+        {
+            "_id": "L101",
+            "name": "LEARNING OBJECTIVES",
+            "description": "",
+            "module": "M10"
+        },
+        {
+            "_id": "L102",
+            "name": "READING",
+            "description": "",
+            "module": "M10"
+        },
+        {
+            "_id": "L103",
+            "name": "SLIDES",
+            "description": "",
+            "module": "M10"
+        }
+      ]
+    },
+    {
+        "_id": "M11",
+        "name": "Week 1 - HTML",
+        "description": "Learn how to create user interfaces with HTML",
+        "course": "19753",
+        "lessons": [
+            {
+                "_id": "L111",
+                "name": "LEARNING OBJECTIVES",
+                "description": "",
+                "module": "M11"
+            },
+            {
+                "_id": "L12",
+                "name": "READING",
+                "description": "",
+                "module": "M11"
+            }
+        ]
+      },
+      {
+        "_id": "M12",
+        "name": "Week 2 - CSS",
+        "description": "Introduction to CSS",
+        "course": "19753",
+        "lessons": [
+            {
+                "_id": "L121",
+                "name": "LEARNING OBJECTIVES",
+                "description": "",
+                "module": "M12"
+            },
+            {
+                "_id": "L122",
+                "name": "READING",
+                "description": "",
+                "module": "M12"
+            },
+            {
+                "_id": "L123",
+                "name": "SLIDES",
+                "description": "",
+                "module": "M12"
+            }
+        ]
+    },
+    {
+        "_id": "M20",
+        "name": "Unit 1",
+        "description": "Regular languages",
+        "course": "16840",
+        "lessons": [
+        {
+            "_id": "L201",
+            "name": "Finite Automata",
+            "description": "",
+            "module": "M20"
+        },
+        {
+            "_id": "L202",
+            "name": "Non-determinism",
+            "description": "",
+            "module": "M20"
+        },
+        {
+            "_id": "L203",
+            "name": "Regular expressions",
+            "description": "",
+            "module": "M2"
+        }
+      ]
+    },
+    {
+        "_id": "M21",
+        "name": "Unit 2",
+        "description": "Non-regular languages",
+        "course": "16840",
+        "lessons": [
+            {
+                "_id": "L211",
+                "name": "CFG",
+                "description": "",
+                "module": "M21"
+            },
+            {
+                "_id": "L212",
+                "name": "Pushdown automata",
+                "description": "",
+                "module": "M21"
+            }
+        ]
+    },
+    {
+        "_id": "M22",
+        "name": "Unit 3",
+        "description": "Turing Machines",
+        "course": "16840",
+        "lessons": []
+    },
+    {
+        "_id": "M30",
+        "name": "Introductory Speech",
+        "description": "",
+        "course": "12075",
+        "lessons": []
+    },
+    {
+        "_id": "M31",
+        "name": "Informative Speech",
+        "description": "",
+        "course": "12075",
+        "lessons": []
+    },
+    {
+        "_id": "M32",
+        "name": "Persuasive Speech",
+        "description": "",
+        "course": "12075",
+        "lessons": []
+    }
+  ]

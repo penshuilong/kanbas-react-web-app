@@ -1,0 +1,23 @@
+.course-navigation {
+    border-radius: 0px;
+    text-align: left;
+}
+
+.course-navigation .list-group-item {
+    height: 40px;
+    border: none;
+    color: #c70f02;
+    padding-left: 5px;
+}
+
+.course-navigation a:hover {
+    text-decoration: underline ;
+}
+
+.course-navigation a.active {
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    border-radius: 0px;
+    border-left: 2px black solid;
+}

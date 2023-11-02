@@ -1,0 +1,47 @@
+[
+    {
+      "_id": "A101",
+      "title": "A1 - ENV + HTML",
+      "course": "19753"
+    },
+    {
+      "_id": "A102",
+      "title": "A2 - CSS + BOOTSTRAP",
+      "course": "19753"
+    },
+    {
+      "_id": "A103",
+      "title": "A3 - JS + REACT",
+      "course": "19753"
+    },
+    {
+      "_id": "A201",
+      "title": "PS1",
+      "course": "16840"
+    },
+    {
+      "_id": "A202",
+      "title": "PS2",
+      "course": "16840"
+    },
+    {
+      "_id": "A203",
+      "title": "PS3",
+      "course": "16840"
+    },
+    {
+      "_id": "A301",
+      "title": "Introductory Speech",
+      "course": "12075"
+    },
+    {
+      "_id": "A302",
+      "title": "Self-Analysis Paper 1",
+      "course": "12075"
+    },
+    {
+      "_id": "A303",
+      "title": "Controversy Speech",
+      "course": "12075"
+    }
+  ]

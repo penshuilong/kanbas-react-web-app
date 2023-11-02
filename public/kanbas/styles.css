@@ -1,0 +1,118 @@
+body * {
+    font-family: Arial, Helvetica, sans-serif;
+    clear: both;
+}
+
+.color-white { color: white; }
+.color-grey { color: #dcdcdc; }
+.color-medium-grey { color: #7d7d7d; }
+.color-darker-grey { color: #4d4d4d; }
+.color-red { color: red; }
+.color-darker-red { color: #c70f02; }
+.color-navy { color: #014c91; }
+.color-green { color: green; }
+.color-success { color: #92cd95; }
+
+.bg-color-white { background-color: white; }
+.bg-color-black { background-color: black; }
+.bg-color-light-grey { background-color: #e9e9e9; }
+.bg-color-navy { background-color: #014c91; }
+.bg-color-success { background-color: #92cd95; }
+
+.font-bold { font-weight: bold; }
+.font-italic { font-style: italic; }
+.font-large { font-size: large; }
+.font-small { font-size: small; }
+.align-center { text-align: center; }
+.float-right { float: right; }
+
+a {
+    text-decoration: none;
+}
+
+.col-1 {
+    width: 85px;
+}
+
+.kanbas-nav {
+    width: 85px;
+    font-size: small;
+    text-align: center;
+    border-radius: 0px;
+}
+
+.kanbas-nav li i {
+    color: #c70f02;
+}
+
+.kanbas-nav li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.kanbas-nav li a:hover {
+    color: white;
+}
+
+.kanbas-nav .list-group-item {
+    align-content: center;
+}
+
+.kanbas-nav .list-group-item:hover {
+    color: white;
+    background-color: black;
+}
+
+.kanbas-nav .list-group-item.active {
+    color:#c70f02;
+    background-color:white;
+    border-color: white;
+}
+
+.kanbas-nav .list-group-item.active a {
+    color:#c70f02;
+    background-color:white;
+    border-color: white;
+}
+
+.secondary-nav {
+    width: 15%;
+    padding-top: 10px;
+}
+
+.secondary-nav ul {
+    list-style-type: none;
+} 
+
+.secondary-nav li {
+    padding: 7px;
+} 
+
+.secondary-nav .active {
+    color: black;
+    border-left-style: solid;
+} 
+
+.secondary-nav .active-link {
+    color: black;
+    font-weight: bold;
+} 
+
+.secondary-nav li a {
+    color: #c70f02;
+} 
+
+.secondary-nav li a:active {
+    color: black;
+}
+
+.btn {
+    background-color: #ebebeb;
+    border: 1px solid #bebebe;
+}
+
+.hi {
+    background-color: aqua;
+}
+  

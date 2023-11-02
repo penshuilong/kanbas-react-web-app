@@ -1,0 +1,35 @@
+.card-group {
+    width: 275px;
+}
+
+.card {
+    width: 255px;
+}
+
+.card-top {
+    width: 250px;
+    height: 140px;
+    border-radius: 3px 3px 0px 0px;
+}
+.card-body {
+    height: 135px;
+}
+
+.primary-text {
+    font-size: medium;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.secondary-text {
+    color: #7d7d7d;
+}
+
+.tertiary-text {
+    color: #7d7d7d;
+    font-size: small;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}

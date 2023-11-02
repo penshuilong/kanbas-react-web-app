@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kanbas</title>
+    <link href="../../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/72ef95feaf.js" crossorigin="anonymous"></script>
+    <link href="../../styles.css" rel="stylesheet"/>
+    <link href="../account.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="row">
+        <div class="col-1">
+            <ul class="list-group flex-column kanbas-nav">
+                <li class="list-group-item bg-color-black">
+                    <i class="fa-solid fa-n fa-4x color-red"></i></li>
+                <li class="list-group-item list-group-item-action bg-color-black active">
+                    <i class="fa-solid fa-circle-user fa-2x color-grey"></i>
+                    <a href="/kanbas/account/profile/index.html">Account</a></li>
+                <li class="list-group-item list-group-item-action bg-color-black">
+                    <i class="fa-solid fa-gauge fa-2x"></i>
+                    <a href="/kanbas/dashboard/index.html">Dashboard</a></li>
+                <li class="list-group-item list-group-item-action bg-color-black">
+                    <i class="fa-solid fa-book fa-2x"></i>
+                    <a href="/kanbas/courses/index.html">Courses</a></li>
+                <li class="list-group-item list-group-item-action bg-color-black">
+                    <i class="fa-regular fa-calendar-days fa-2x"></i>
+                    <a href="#">Calendar</a></li>
+                <li class="list-group-item list-group-item-action bg-color-black">
+                    <i class="fa-solid fa-inbox fa-2x"></i>
+                    <a href="#">Inbox</a></li>
+                <li class="list-group-item list-group-item-action bg-color-black">
+                    <i class="fa-regular fa-clock fa-2x"></i>
+                    <a href="#">History</a></li>
+                <li class="list-group-item list-group-item-action bg-color-black">
+                    <i class="fa-brands fa-square-youtube fa-2x"></i>
+                    <a href="#">Studio</a></li>
+                <li class="list-group-item list-group-item-action bg-color-black">
+                    <i class="fa-regular fa-circle-right fa-2x"></i>
+                    <a href="#">Commons</a></li>
+                <li class="list-group-item list-group-item-action bg-color-black">
+                    <i class="fa-regular fa-circle-question fa-2x"></i>
+                    <a href="#">Help</a></li>
+            </ul> 
+        </div>
+        <div class="col">
+            <div class="row pt-3 ps-4">
+                <div class="col-1">
+                    <i class="fa-solid fa-bars fa-2x color-darker-red"></i>
+                </div>
+                <div class="col">
+                    <h2>Jasmine Lai's Profile</h2>
+                </div>
+            </div>
+            <hr class="ms-4 mt-0 me-4">
+            <div class="row">
+                <div class="col-2 secondary-nav">
+                    <ul>
+                        <li><a href="#">Notifications</a></li>
+                        <li class="active"><a href="/kanbas/account/profile/index.html" class="active-link">Profile</a></li>
+                        <li><a href="#">Files</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">ePortfolios</a></li>
+                        <li><a href="#">Shared Content</a></li>
+                        <li><a href="#">The Hub</a></li>
+                        <li><a href="#">Qwickly Course Tools</a></li>
+                        <li><a href="#">Global Announcements</a></li>
+                    </ul> 
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-circle-user fa-8x color-grey mt-3 mb-4"></i><br/>
+                    <label for="name" class="font-bold">Name:*</label><br/>
+                    <input type="text" class="form-control" value="Jasmine Lai" id="name"/><br/>
+                    <label for="pronouns" class="font-bold">Pronouns:</label><br/>
+                    <select id="pronouns" class="form-select">
+                        <option selected value="NONE">None</option>
+                    </select><br/>
+                    <label for="title" class="font-bold">Title:</label><br/>
+                    <input type="text" class="form-control" id="title"/><br/>
+                    <br/>
+                    <h3>Contact</h3>
+                    <p>
+                        No registered services, you can add some on the <a href="#">settings</a> page.
+                    </p><br/>
+                    <h3>Biography</h3>
+                    <textarea class="form-control">Student, Software Engineer, Genshin Impact enthusiast.</textarea><br/>
+                    <br/>
+                    <h3>Links</h3>
+                    <div class="row">
+                        <div class="col-3 font-bold align-center">
+                            <span class="font-bold">Title</span>
+                        </div>
+                        <div class="col-3 font-bold align-center">
+                            <span class="font-bold">URL</span>
+                        </div>
+                    </div>
+                    <div class="row ps-2">
+                        <div class="col-3">
+                            <input type="text" class="form-control" value="GitHub"/>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                        <div class="col-3">
+                            <input type="text" class="form-control" value="https://github.com/jasmine-lai"/>
+                            <i class="fa-solid fa-x color-red"></i>
+                        </div>
+                    </div>
+                    <div class="row ps-2">
+                        <a href="#" class="btn add-link">
+                            Add another link
+                        </a>
+                    </div>
+                    <hr class="short-hr">
+                    <div class="row profile-btns">
+                        <a href="/kanbas/account/profile/index.html" class="btn cancel">
+                            Cancel
+                        </a>
+                        <a href="/kanbas/account/profile/index.html" class="btn save-profile btn-danger ms-1">
+                            Save Profile
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <a href="/kanbas/account/profile/index.html" class="btn cancel-editing mt-1 me-5 float-end">
+                        <i class="fa-solid fa-pencil color-darker-grey"></i>
+                        Cancel Editing
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

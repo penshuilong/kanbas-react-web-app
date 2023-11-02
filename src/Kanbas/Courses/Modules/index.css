@@ -1,0 +1,50 @@
+.col-1 {
+    width: 4vw;
+}
+
+.col-9 {
+    width: 78vw;
+}
+
+.collapse-all, .collapse-all:hover {
+    width: 120px;
+    background-color: #f5f5f5;
+    border: 1px solid #bebebe;
+}
+
+.view-progress, .view-progress:hover {
+    width: 140px;
+    background-color: #f5f5f5;
+    border: 1px solid #bebebe;
+}
+
+.dropdown-option {
+    width: 135px;
+    background-color: #f5f5f5;
+    border: 1px solid #bebebe;
+}
+
+.add-module {
+    width: 110px;
+}
+
+.vertical-ellipsis, .vertical-ellipsis:hover {
+    width: 30px;
+    align-items: center;
+    background-color: #f5f5f5;
+    border: 1px solid #bebebe;
+}
+
+.vertical-ellipsis {
+    font-weight: 600;
+    color: black;
+}
+
+.modules .module {
+    border-radius: 0px;
+    height: 45px;
+}
+
+.edit-module-list {
+    width: 250px;
+}

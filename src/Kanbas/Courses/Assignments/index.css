@@ -1,0 +1,64 @@
+.main-content .row {
+    width: 80vw;
+}
+
+.main-content .row .col-10 {
+    justify-content: right;
+}
+
+.search {
+    width: 250px;
+}
+
+.add-group, .add-group:hover {
+    width: 100px;
+    background-color: #f5f5f5;
+    border: 1px solid #bebebe;
+}
+
+.add-assignment {
+    width: 140px;
+}
+
+.assignment-link {
+    color: black;
+    text-decoration: none;
+}
+
+.assignment-link:hover {
+    text-decoration: underline;
+}
+
+.edit-content .row {
+    width: 80vw;
+    justify-content: right;
+}
+
+.publish-status {
+    width: 130px;
+    text-decoration: none;
+}
+
+.edit-field {
+    justify-content: center;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.edit-input {
+    width: 70%;
+}
+
+.cancel-button {
+    color: black;
+    background-color: #f5f5f5;
+    border: 1px solid #bebebe;
+}
+
+.cancel-button:hover {
+    color: black;
+    background-color: #f5f5f5;
+    border: 1px solid #bebebe;
+}

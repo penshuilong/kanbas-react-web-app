@@ -1,0 +1,70 @@
+a {
+    color: #c70f02;
+} 
+
+a:hover {
+    color: #c70f02;
+}
+
+.btn {
+    background-color: #ebebeb;
+    border: 1px solid #bebebe;
+}
+
+.edit-profile {
+    width: 130px;
+    height: 40px;
+}
+
+.form-control {
+    width: 50%;
+}
+
+.form-select {
+    width: 30%;
+}
+
+.col-3 {
+    width: 40%;
+    padding: 0;
+}
+
+.col-3 input {
+    width: 90%;
+    float: left;
+}
+
+.col-3 i {
+    padding-top: 7px;
+    padding-left: 5px;
+}
+
+.add-link {
+    width: 25%;
+    padding: 2px;
+}
+
+.short-hr {
+    width: 80%;
+}
+
+.profile-btns {
+    padding-left: 45%;
+}
+
+.cancel {
+    width: 80px;
+    height: 40px;
+}
+
+.save-profile {
+    color: white;
+    background-color: #c70f02;
+    width: 130px;
+    height: 40px;
+}
+
+.cancel-editing {
+    width: 160px;
+    height: 40px;
+}

@@ -1,0 +1,35 @@
+.kanbas-navigation {
+    height: 100vh;
+    background: black;
+    border-radius: 0px; /* TODO: not working */
+    border: none;
+    text-align: center;
+    align-items: center;
+}
+
+.kanbas-navigation .logo {
+    color: #e31102;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.kanbas-navigation .list-group-item {
+    width: 80px;
+}
+  
+.kanbas-navigation a {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: small;
+}
+
+.kanbas-navigation a .icon {
+    color: #c70f02;
+    border: none;
+}
+  
+.kanbas-navigation a.active {
+    background-color: white;
+    color: #c70f02;
+}

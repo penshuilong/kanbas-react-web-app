@@ -1,0 +1,56 @@
+.color-turquoise { color: #40a9c1; }
+.color-indigo { color: #424393; }
+.color-green { color: #3bac2a; }
+.bg-color-turquoise { background-color: #40a9c1; }
+.bg-color-indigo { background-color: #424393; }
+.bg-color-green { background-color: #3bac2a; }
+
+.dashboard {
+    width: 90vw;
+}
+
+.dashboard .list-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.dashboard .list-group-item {
+    width: 270px;
+    border: none;
+}
+
+.card-group {
+    width: 275px;
+}
+
+.card-top {
+    height: 140px;
+    border-radius: 3px 3px 0px 0px;
+}
+
+.card-body {
+    height: 130px;
+}
+
+p:hover {
+    text-decoration: underline;
+}
+
+.primary-text {
+    font-size: medium;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.secondary-text {
+    font-size: medium;
+    color: #7d7d7d;
+}
+
+.edit-dashboard {
+    width: 20vw;
+    border-color: #7d7d7d;
+    border-width: 1px;
+}
