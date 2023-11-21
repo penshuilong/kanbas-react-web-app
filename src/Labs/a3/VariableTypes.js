@@ -1,3 +1,5 @@
+import React from "react";
+
 function VariableTypes() {
     let numberVariable = 123;
     let floatingPointNumber = 234.345;
@@ -12,7 +14,7 @@ function VariableTypes() {
             numberVariable = { numberVariable }<br/>
             floatingPointNumber = { floatingPointNumber }<br/>
             stringVariable = { stringVariable }<br/>
-            booleanVariable = { booleanVariable }<br/>
+            booleanVariable = { booleanVariable + "" }<br/>
             isNumber = { isNumber }<br/>
             isString = { isString }<br/>
             isBoolean = { isBoolean }<br/>

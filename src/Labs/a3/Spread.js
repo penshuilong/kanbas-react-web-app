@@ -1,3 +1,5 @@
+import React from "react";
+
 function Spread() {
     const arr1 = [ 1, 2, 3 ];
     const arr2 = [ ...arr1, 4, 5, 6 ];
@@ -8,13 +10,12 @@ function Spread() {
         <div>
             <h2>Spread Operator</h2>
             <h3>Array Spread</h3>
-            arr1 = { JSON.stringify(arr1) }<br/>
-            arr2 = { JSON.stringify(arr2) }<br/>
+            arr1 = { JSON.stringify(arr1) }  <br />
+            arr2 = { JSON.stringify(arr2) }  <br />
             <h3>Object Spread</h3>
-            { JSON.stringify(obj1) }<br/>
-            { JSON.stringify(obj2) }<br/>
-            { JSON.stringify(obj3) }<br/>
-        </div>
-    );
+            { JSON.stringify(obj1) }         <br />
+            { JSON.stringify(obj2) }         <br />
+            { JSON.stringify(obj3) }         <br />
+        </div>);
 }
-export default Spread
+export default Spread;

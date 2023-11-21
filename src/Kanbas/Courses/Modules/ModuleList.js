@@ -1,73 +1,109 @@
-import React, { useState } from "react";
-import { useParams } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
-import { VscGripper } from "react-icons/vsc";
-import { BiCaretDown } from "react-icons/bi";
-import { AiFillCheckCircle } from "react-icons/ai";
-import { HiOutlineEllipsisVertical } from "react-icons/hi2";
-import { AiOutlinePlus } from "react-icons/ai";
-import db from "../../Database";
-import { addModule, deleteModule, updateModule, setModule } from "./modulesReducer";
-import "./index.css";
-
+import React, {useEffect, useState} from "react";
+import {useParams} from "react-router-dom";
+import {useSelector, useDispatch} from "react-redux";
+import {
+    addModule,
+    deleteModule,
+    updateModule,
+    setModule,
+    setModules,
+} from "./modulesReducer";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {
+    faCaretDown, faCaretRight,
+    faCircleCheck, faEllipsisV,
+    faGripVertical,
+    faPlus
+} from "@fortawesome/free-solid-svg-icons";
+import "./ModuleList.css";
+import * as client from "./client";
 
 function ModuleList() {
-  const { courseId } = useParams();
-  const modules = useSelector((state) => state.modulesReducer.modules);
-  const module = useSelector((state) => state.modulesReducer.module);
-  const dispatch = useDispatch();
-  return (
-    <div className="list-group main-content mt-4">
-      <li className="list-group-item">
-        <div>
-          <h5>Edit Module List</h5>
-          <input value={module.name}
-              onChange={(e) => dispatch(setModule({ ...module, name: e.target.value }))}
-              placeholder="Module Name"
-              className="me-2 col edit-module-list"
-          />
-          <button onClick={() => dispatch(addModule({ ...module, course: courseId }))} className="btn btn-success ms-1">Add</button>
-          <button onClick={() => dispatch(updateModule(module))} className="btn btn-primary ms-1">Update</button>
-          <div className="col mt-2">
-            <textarea value={module.description}
-                onChange={(e) => dispatch(setModule({ ...module, description: e.target.value }))}
-                placeholder="Module Description"
-                className="edit-module-list"
-            />
-          </div>
-        </div>
-      </li>
-      {modules
-        .filter((module) => module.course === courseId)
-        .map((module, index) => (
-          <div className="mt-4">
-            <li className="list-group-item module list-group-item-header">
-              <VscGripper className="text me-1" size="20"/>
-              <BiCaretDown className="text me-2" size="10"/>
-              {module.name} {module.description}
-              <HiOutlineEllipsisVertical className="text ms-1 me-0 float-right" size="25"/>
-              <AiOutlinePlus className="text mt-1 ms-2 float-right" size="15"/>
-              <BiCaretDown className="text mt-1 float-right" size="15"/>
-              <AiFillCheckCircle className="text published mt-1 float-right" size="20"/>
-              <button onClick={() => dispatch(deleteModule(module._id))} className="btn btn-danger mb-2 me-2 p-1 font-small float-right">
-                Delete
-              </button>
-              <button onClick={() => dispatch(setModule(module))} className="btn btn-light mb-2 me-2 p-1 font-small float-right">
-                Edit
-              </button>
+    const {courseId} = useParams();
+    const modules = useSelector((state) => state.modulesReducer.modules);
+    const module = useSelector((state) => state.modulesReducer.module);
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        client.findModulesForCourse(courseId)
+            .then((modules) =>
+                      dispatch(setModules(modules))
+            );
+    }, [courseId]);
+
+    const handleAddModule = () => {
+        client.createModule(courseId, module).then((module) => {
+            dispatch(addModule(module));
+        });
+    };
+
+    const handleDeleteModule = (moduleId) => {
+        client.deleteModule(moduleId).then((status) => {
+            dispatch(deleteModule(moduleId));
+        });
+    };
+
+    const handleUpdateModule = async () => {
+        const status = await client.updateModule(module);
+        dispatch(updateModule(module));
+    };
+
+    return (
+        <ul className="list-group">
+            <li className="list-group-item">
+                <button className="btn btn-success me-1 mb-2"
+                        onClick={handleAddModule}>
+                    Add
+                </button>
+                <button className="btn btn-primary me-1 mb-2"
+                        onClick={handleUpdateModule}>
+                    Update
+                </button>
+                <input className="me-1 mb-2"
+                       value={module.name}
+                       onChange={(e) =>
+                           dispatch(setModule({...module, name: e.target.value}))
+                       }/>
+                <textarea className="me-1 mb-2"
+                          value={module.description}
+                          onChange={(e) =>
+                              dispatch(setModule({...module, description: e.target.value}))
+                          }/>
             </li>
-            {module.lessons &&
-              module.lessons.map((lesson, index) => (
-              <li key={index} className="list-group-item border-left-active">
-                <VscGripper className="text me-2" size="20"/>
-                {lesson.name}
-                <HiOutlineEllipsisVertical className="text ms-1 me-0 float-right" size="25"/>
-                <AiFillCheckCircle className="text published float-right" size="20"/>
-              </li>
-            ))}
-          </div>
-        ))}
-    </div>
-  );
+
+            {modules.map((module, index) => (
+                <li key={index} className="list-group-item list-group-item-secondary mb-4">
+                    <div
+                        className="d-flex align-items-center justify-content-between mt-2">
+                        <div className="list-header-content d-flex align-items-center mb-2">
+                            <FontAwesomeIcon className="me-2"
+                                             icon={faGripVertical}></FontAwesomeIcon>
+                            <FontAwesomeIcon icon={faCaretRight}></FontAwesomeIcon>
+                            <h5 className="list-header m-0 ms-2">{module.name}</h5>
+                        </div>
+                        <div className="d-flex align-items-center">
+                            <FontAwesomeIcon className="text-success me-2"
+                                             icon={faCircleCheck}></FontAwesomeIcon>
+                            <FontAwesomeIcon className="me-3" icon={faCaretDown}></FontAwesomeIcon>
+                            <FontAwesomeIcon className="me-2" icon={faPlus}></FontAwesomeIcon>
+                            <FontAwesomeIcon className="text-secondary"
+                                             icon={faEllipsisV}></FontAwesomeIcon>
+                        </div>
+                    </div>
+                    <p>{module.description}</p>
+                    <button className="btn btn-primary me-1"
+                            onClick={() => dispatch(setModule(module))}>
+                        Edit
+                    </button>
+                    <button className="btn btn-danger"
+                            onClick={() => handleDeleteModule(module._id)}>
+                        Delete
+                    </button>
+                </li>
+            ))
+            }
+        </ul>
+    );
 }
+
 export default ModuleList;

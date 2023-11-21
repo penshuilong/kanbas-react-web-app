@@ -1,18 +1,23 @@
-function ForLoops() {
+import React from "react";
+
+
+
+function ForLoops(){
     let stringArray1 = ['string1', 'string3'];
     let stringArray2 = [];
     for (let i = 0;
-        i < stringArray1.length;
-        i++) {
+         i < stringArray1.length;
+         i++) {
         const string1 = stringArray1[i];
-        stringArray2.push(string1.toUpperCase());
+        stringArray2.push(
+            string1.toUpperCase());
     }
-    console.log(stringArray2);
     return (
-        <>
-            <h3>Looping through arrays</h3>
-            stringArray2 = { stringArray2 }<br/>
-        </>
+      <div>
+          <h3>Looping Through Arrays</h3>
+          stringArray2 = {stringArray2}
+      </div>
     );
 }
-export default ForLoops
+
+export default ForLoops;

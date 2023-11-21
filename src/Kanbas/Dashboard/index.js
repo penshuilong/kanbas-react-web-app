@@ -7,11 +7,10 @@ import "./index.css"
 import "../index.css"
 
 function Dashboard({ courses, course, setCourse, addNewCourse, deleteCourse, updateCourse }) {
-  const colorMap = {
-    19753: "color-turquoise", 
-    16840: "color-indigo", 
-    12075: "color-green",
-  };
+    const wdColorImage = {
+        "background-color": "rgb(0, 118, 184)",
+        height:"146px",
+    };
   return (
     <div className="dashboard">
       <h1 className="mt-3 ms-4 mb-0 font-slim">Dashboard</h1>
@@ -37,11 +36,11 @@ function Dashboard({ courses, course, setCourse, addNewCourse, deleteCourse, upd
           <Link key={course._id} to={`/Kanbas/Courses/${course._id}`} className="list-group-item p-0 mt-3 me-4">
             <div className="card-group">
               <div className="card">
-                <div className={`card-top bg-${colorMap[`${course._id}`]}`}>
+                <div className={`card-top `}>
                   <HiOutlineEllipsisVertical className="text mt-3 me-2 color-white float-right" size="35"/>
                 </div>
                 <div className="card-body">
-                    <p className={`primary-text mb-1 ${colorMap[`${course._id}`]}`}>{course.name}</p>
+                    <p className={`primary-text mb-1 `}>{course.name}</p>
                     <p class="secondary-text mt-0">
                       {course.number}.{course._id}
                     </p>

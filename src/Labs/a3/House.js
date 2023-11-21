@@ -1,3 +1,4 @@
+import React from "react";
 function House() {
     const house = {
         bedrooms: 4,
@@ -24,4 +25,4 @@ function House() {
         </div>
     );
 }
-export default House
+export default House;

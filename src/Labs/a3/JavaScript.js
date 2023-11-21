@@ -1,21 +1,20 @@
-import Add from "./Add";
-import BooleanVariables from "./BooleanVariables";
-import Destructing from "./Destructing";
-import FunctionDestructing from "./FunctionDestructing";
-import House from "./House";
-import IfElse from "./IfElse";
-import PathParameters from "./PathParameters";
-import Spread from "./Spread";
-import TemplateLiterals from "./TemplateLiterals";
-import TernaryOperator from "./TernaryOperator";
-import VariableTypes from "./VariableTypes";
+import React from 'react';
 import VariablesAndConstants from "./VariablesAndConstants";
-import WorkingWithArrays from "./WorkingWithArrays";
+import VariableTypes from "./VariableTypes";
+import BooleanVariables from "./BooleanVariables";
+import IfElse from "./IfElse";
+import TernaryOperator from "./TernaryOperator";
 import WorkingWithFunctions from "./WorkingWithFunctions";
+import TemplateLiterals from "./TemplateLiterals";
+import House from "./House";
+import Spread from "./Spread";
+import Desctructing from "./Desctructing";
+import FunctionDestructing from "./FunctionDestructing";
 
 function JavaScript() {
-    console.log("Hello World!");
-    return (
+    console.log('Hello World!');
+
+    return(
         <div>
             <h1>JavaScript</h1>
             <VariablesAndConstants/>
@@ -24,11 +23,10 @@ function JavaScript() {
             <IfElse/>
             <TernaryOperator/>
             <WorkingWithFunctions/>
-            <WorkingWithArrays/>
             <TemplateLiterals/>
             <House/>
             <Spread/>
-            <Destructing/>
+            <Desctructing/>
             <FunctionDestructing/>
         </div>
     );

@@ -1,64 +1,26 @@
-.main-content .row {
-    width: 80vw;
+.list-group > .list-group-item:first-child{
+    border-radius: 0px;
 }
 
-.main-content .row .col-10 {
-    justify-content: right;
+.list-group > .list-group-item:last-child{
+    border-radius: 0px;
 }
 
-.search {
-    width: 250px;
+.wd-assignment-item{
+    box-shadow: inset 4px 0px 0px 0px green;
 }
 
-.add-group, .add-group:hover {
-    width: 100px;
-    background-color: #f5f5f5;
-    border: 1px solid #bebebe;
+.wd-assignment-title{
+    margin:7px 0px 0px 0px;
+    font-size:1.5rem;
+    padding:8px 15px 8px;
 }
 
-.add-assignment {
-    width: 140px;
+.form-control.wd-search-field{
+    width:40%;
+    max-width:350px;
 }
 
-.assignment-link {
-    color: black;
-    text-decoration: none;
-}
-
-.assignment-link:hover {
-    text-decoration: underline;
-}
-
-.edit-content .row {
-    width: 80vw;
-    justify-content: right;
-}
-
-.publish-status {
-    width: 130px;
-    text-decoration: none;
-}
-
-.edit-field {
-    justify-content: center;
-}
-
-.col-3 {
-    width: 25%;
-}
-
-.edit-input {
-    width: 70%;
-}
-
-.cancel-button {
-    color: black;
-    background-color: #f5f5f5;
-    border: 1px solid #bebebe;
-}
-
-.cancel-button:hover {
-    color: black;
-    background-color: #f5f5f5;
-    border: 1px solid #bebebe;
+.wd-top-buttons{
+    min-width:500px;
 }
