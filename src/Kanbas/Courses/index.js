@@ -1,8 +1,8 @@
 import db from "../../Kanbas/Database";
-import { useParams, Route, Routes, Navigate, useLocation} from "react-router-dom";
+import { useParams, Route, Routes, Navigate, useLocation } from "react-router-dom";
 import CourseNavigation from "./CourseNavigation";
 import Modules from "./Modules";
-import {FaBars} from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 import "./index1.css"
 import Home from "./Home";
 import Assignments from "./Assignments";
@@ -19,29 +19,29 @@ function Courses() {
     const lastPart = pathname.split('/').pop();
 
     const { courseId } = useParams();
-    const URL = "https://kanbas-node-server-app-amul.onrender.com/api/courses";
+    const URL = "https://kanbas-node-server-app-nosd.onrender.com/api/courses";
     const [course, setCourse] = useState({});
     const findCourseById = async (courseId) => {
-      const response = await axios.get(
-        `${URL}/${courseId}`
-      );
-      setCourse(response.data);
+        const response = await axios.get(
+            `${URL}/${courseId}`
+        );
+        setCourse(response.data);
     };
     useEffect(() => {
-      findCourseById(courseId);
+        findCourseById(courseId);
     }, [courseId]);
-  
+
     return (
         <div>
             <div className="row">
-                <nav className="breadcrumb" class="d-none d-sm-block"> 
+                <nav className="breadcrumb" class="d-none d-sm-block">
                     <ol className="breadcrumb">
-                        <li className="breadcrumb-item text-danger"><FaBars className="mx-2"/> {course.name}.{course.number}</li>
+                        <li className="breadcrumb-item text-danger"><FaBars className="mx-2" /> {course.name}.{course.number}</li>
                         <li className="breadcrumb-item active" aria-current="page">{lastPart}</li>
                     </ol>
                 </nav>
             </div>
-            <CourseNavigation /> 
+            <CourseNavigation />
             <div>
                 <div
                     className="overflow-y-scroll position-fixed bottom-0 end-0"
@@ -53,11 +53,11 @@ function Courses() {
                     <Routes>
                         <Route path="/" element={<Navigate to="Home" />} />
                         <Route path="Home" element={<Home />} />
-                        <Route path="Modules" element={<Modules/>} />
-                        <Route path="Assignments" element={<Assignments/>} />
+                        <Route path="Modules" element={<Modules />} />
+                        <Route path="Assignments" element={<Assignments />} />
                         <Route
                             path="Assignments/:assignmentId"
-                            element={<AssignmentEditor/>}/>
+                            element={<AssignmentEditor />} />
                         <Route path="Grades" element={<Grades />} />
                     </Routes>
                 </div>
