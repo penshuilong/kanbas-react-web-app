@@ -6,7 +6,6 @@ import MapFunction from "./MapFunction";
 import JsonStringify from "./JsonStringify";
 import FindFunction from "./FIndFunction";
 import FindIndex from "./FindIndex";
-import House from "./House";
 
 var functionScoped = 2;
 let blockScoped = 5;

@@ -9,7 +9,6 @@ export const updateModule = async (module) => {
 };
 
 export const deleteModule = async (moduleId) => {
-    console.log(API_BASE);
     const response = await axios
         .delete(`${MODULES_URL}/${moduleId}`);
     return response.data;
