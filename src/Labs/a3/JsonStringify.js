@@ -14,5 +14,4 @@ function JsonStringify() {
     </div>
   );
 }
-
 export default JsonStringify;
