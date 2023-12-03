@@ -20,7 +20,7 @@ function EncodingParametersInURLs() {
   };
   const fetchSubtraction = async (a, b) => {
     const response = await axios.get(
-      `https://https://kanbas-node-server-app-nosd.onrender.com/a5/subtract/${a}/${b}`);
+      `https://kanbas-node-server-app-nosd.onrender.com/a5/subtract/${a}/${b}`);
     setResult(response.data);
   };
 
