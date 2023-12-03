@@ -1,34 +1,41 @@
-.courses-nav-container {
-    width: 190px;
-    margin-right: 40px;
+/* .wd-course-navigation {
+    background-color: white;
+    list-style: none;
+    padding: 0px;
+    width: 120px;
+    margin: 0px;
+    margin-left: 20px;
 }
-
-.courses-nav-container .courses-nav-link {
-    color: red;
-    font-size: 14px;
-    text-decoration: none;
-    border-left: 5px solid transparent;
-    padding: 0 0 0 8px;
+.wd-course-navigation li {
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-
-.courses-nav-item {
-    margin-bottom: 15px;
-    width: 100%;
-}
-
-.courses-nav-link.active {
-    color: black;
+.wd-course-navigation li.wd-active {
     border-left: 2px solid black;
-    padding-left: 11px;
+}
+.wd-course-navigation li.wd-active a {
+    color: black;
+}
+.wd-course-navigation a {
+    color: red;
+    text-decoration: none;
+} */
+
+/* .wd-course-navigation li {
+    border: none;
+} */
+
+.custom-list-group-course .list-group-item {
+    border: none;
+    background-color: white;
+    color: red;
+    margin-left: 20px;
+    border-radius: 0 !important;
 }
 
-.nav-container-top-text {
-    color: darkgrey;
-    font-size: 12px;
-    font-style: italic;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 150px;
-    margin-left: 15px;
+.custom-list-group-course .list-group-item.active {
+    border-left: 2px solid black;
+    color: black;
+    background-color: white;
 }

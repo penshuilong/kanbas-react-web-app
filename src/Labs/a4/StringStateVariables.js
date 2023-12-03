@@ -10,7 +10,6 @@ function StringStateVariables() {
         value={firstName}
         onChange={(e) => setFirstName(e.target.value)}
       />
-      <h1>{firstName}</h1>
     </div>
   );
 }

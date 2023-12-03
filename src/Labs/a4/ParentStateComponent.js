@@ -5,7 +5,9 @@ function ParentStateComponent() {
   return (
     <div>
       <h2>Counter {counter}</h2>
-      <ChildStateComponent counter={counter} setCounter={setCounter} />
+      <ChildStateComponent
+        counter={counter}
+        setCounter={setCounter} />
     </div>
   );
 }

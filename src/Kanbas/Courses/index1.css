@@ -1,0 +1,8 @@
+.custom-breadcrumb-item::before {
+    content: " > "; /* Set custom content for the separator */
+}
+
+/* Hide the separator before the first breadcrumb item */
+.breadcrumb-item:first-child::before {
+    content: ""; /* Empty content to hide the separator */
+}

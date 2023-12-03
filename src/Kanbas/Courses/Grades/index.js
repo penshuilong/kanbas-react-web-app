@@ -1,127 +1,72 @@
 import db from "../../Database";
-import {useParams} from "react-router-dom";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {
-    faChevronDown,
-    faCog,
-    faFileExport,
-    faFileImport, faFilter, faKeyboard,
-    faSearch
-} from "@fortawesome/free-solid-svg-icons";
-
+import { useParams } from "react-router-dom";
+import { FaFileImport, FaFileExport } from "react-icons/fa";
+import { AiFillSetting } from "react-icons/ai";
+import { BiSearchAlt2 } from "react-icons/bi";
+import { TbFilter } from "react-icons/tb"
 function Grades() {
-    const {courseId} = useParams();
+    const { courseId } = useParams();
     const assignments = db.assignments.filter((assignment) => assignment.course === courseId);
     const enrollments = db.enrollments.filter((enrollment) => enrollment.course === courseId);
+
     return (
         <div>
-            <div className="row">
-                <div className="col-6 text-danger mt-2">
-                    <div className="row">
-                        <div className="col-10 col-sm-11">
-                            <p>Gradebook <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon>
-                            </p>
-                        </div>
-                        <div className="col-1 col-sm-1">
-                            <FontAwesomeIcon icon={faKeyboard}></FontAwesomeIcon>
-                        </div>
+            <div className="d-flex justify-content-end">
+                <button type="button" class="btn btn-light me-2">
+                    <FaFileImport className="me-2" />Import</button>
+                <button type="button" class="btn btn-light me-2">
+                    <FaFileExport className="me-2" />Export</button>
+                <button type="button" class="btn btn-light me-2">
+                    <AiFillSetting /></button>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <h6>Students Names</h6>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"><BiSearchAlt2 /></span>
+                        <select class="form-select" id="dropdownSelect">
+                            <option value="option1">Search Students</option>
+                            <option value="option2">Student 1</option>
+                            <option value="option3">Student 2</option>
+                        </select>
                     </div>
                 </div>
-
-                <div className="col-6">
-                    <div className="d-flex align-items-center justify-content-end mb-2">
-                        <a href="#" className="btn btn-secondary" role="button">
-                            <FontAwesomeIcon className="me-1" icon={faFileImport}></FontAwesomeIcon>
-                            Import
-                        </a>
-                        <a href="#" className="btn btn-secondary ms-1" role="button">
-                            <FontAwesomeIcon className="me-1" icon={faFileExport}></FontAwesomeIcon>
-                            Export
-                        </a>
-                        <a href="#" className="btn btn-secondary ms-1" role="button">
-                            <FontAwesomeIcon icon={faCog}></FontAwesomeIcon>
-                        </a>
-
+                <div class="col-6">
+                    <h6>Assignment Names</h6>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"><BiSearchAlt2 /></span>
+                        <select class="form-select" id="dropdownSelect">
+                            <option value="option1">Search Assignments</option>
+                            <option value="option2">Student 1</option>
+                            <option value="option3">Student 2</option>
+                        </select>
                     </div>
                 </div>
             </div>
-            <div id="module-1" className="row">
-                <form id="assignment-edit">
-
-                    <div className="row">
-                        <div className="col-6">
-                            <label htmlFor="text-fields-student-name" className="form-label">
-                                <h6>Student Names</h6>
-                            </label>
-
-                            <div className="input-group">
-                                                        <span className="input-group-text">
-                                                            <FontAwesomeIcon
-                                                                icon={faSearch}></FontAwesomeIcon>
-                                                        </span>
-                                <select className="form-select" id="text-fields-student-name">
-                                    <option selected disabled>Search Students</option>
-                                    <option value="student1">Student 1</option>
-                                    <option value="student2">Student 2</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div className="col-6">
-                            <label htmlFor="text-fields-assignment-name" className="form-label">
-                                <h6>Assignment Names</h6>
-                            </label>
-
-                            <div className="input-group">
-                                                        <span className="input-group-text">
-                                                            <FontAwesomeIcon
-                                                                icon={faSearch}></FontAwesomeIcon>
-                                                        </span>
-                                <select className="form-select" id="text-fields-assignment-name">
-                                    <option selected>Search Assignments</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <a href="#" className="btn btn-secondary mt-3 mb-3" role="button">
-                        <FontAwesomeIcon icon={faFilter}></FontAwesomeIcon>
-                        Apply Filters
-                    </a>
-                </form>
+            <div class="row mb-3">
+                <button type="button" className="btn btn-secondary" style={{ width: "20%" }}>
+                    <TbFilter className="me-2" />Apply Filters</button>
             </div>
             <div className="table-responsive">
-                <table className="table table-striped table-bordered">
+                <table className="table table-striped border">
                     <thead>
-                    <tr>
                         <th>Student Name</th>
-                        {assignments.map((assignment) => (
-                            <th key={assignment._id}>{assignment.title}</th>
-                        ))}
-                    </tr>
+                        {assignments.map((assignment) => (<th>{assignment.title}</th>))}
                     </thead>
                     <tbody>
-                    {enrollments.map((enrollment, index) => {
-                        const user = db.users.find((user) => user._id === enrollment.user);
-                        return (
-                            <tr key={enrollment.user}>
-                                <td className="text-danger">{user.firstName} {user.lastName}</td>
-                                {assignments.map((assignment) => {
-                                    const grade = db.grades.find(
-                                        (grade) => grade.student === enrollment.user
-                                                   && grade.assignment === assignment._id
-                                    );
-                                    return <td key={assignment._id}>{grade?.grade || ""}</td>;
-                                })}
-                            </tr>
-                        );
-                    })}
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    );
+                        {enrollments.map((enrollment) => {
+                            const user = db.users.find((user) => user._id === enrollment.user);
+                            return (
+                                <tr>
+                                    <td>{user.firstName} {user.lastName}</td>
+                                    {assignments.map((assignment) => {
+                                        const grade = db.grades.find(
+                                            (grade) => grade.student === enrollment.user && grade.assignment === assignment._id);
+                                        return (<td>{grade?.grade || ""}</td>);
+                                    })}
+                                </tr>);
+                        })}
+                    </tbody></table>
+            </div></div>);
 }
-
 export default Grades;

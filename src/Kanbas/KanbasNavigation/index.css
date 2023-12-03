@@ -1,49 +1,88 @@
-.account-sidebar {
+.wd-kanbas-navigation {
     background-color: black;
-    width: 80px;
-    min-height: 100vh;
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    list-style: none;
+    padding: 0px;
+    width: 150px;
+    margin: 0px;
 }
 
-.account-sidebar .nav-link {
-    width: 80px;
-    color: white;
-    font-size: 14px;
-    margin: 5px 0;
+.wd-kanbas-navigation li {
     padding: 10px;
+    margin-bottom: 15px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-.account-sidebar .nav-link .account-icon {
-    color: #bbb;
+.wd-kanbas-navigation li a {
+    color: white;
+    text-decoration: none;
+}
+
+.wd-kanbas-navigation li.wd-active {
+    background-color: white;
+}
+.wd-kanbas-navigation li.wd-active a {
+    color: red;
+}
+.wd-kanbas-navigation li a i {
+    color: red;
+    font-size: 1.5em;
     margin-bottom: 5px;
 }
 
-.account-sidebar .nav-link.active {
-    background-color: white;
-    color: red;
+#accountWhite {
+    color: gray;
 }
 
-.account-sidebar .nav-link:not(.active) {
+
+.wd-kanbas-navigation2 {
+    list-style: none;
+    /* padding: 0px; */
+    width: 90px;
+    margin: 0px;
+}
+.wd-kanbas-navigation2 li {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.wd-kanbas-navigation2 li a {
+    color: red;
+    text-decoration: none;
+}
+
+
+
+
+.wd-icon {
+    font-size: 2em;
+    color: red;
+    margin-bottom: 5px;
+}
+
+.wd-icon-card {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+.custom-list-group .list-group-item {
+    border: none; /* Remove the border */
     background-color: black;
     color: white;
+    border-radius: 0 !important; /* Remove the rounded corners */
 }
 
-.account-sidebar .icon {
-    color: red;
-    font-size: 25px;
-    margin-bottom: 5px;
+.custom-list-group .nu-icon {
+    padding: 0px;
+    margin: 0px;    
+    width: 90px;
+    height: 90px;
+    margin-left: 10px;
 }
 
-.square-image {
-    max-width: 80px;
-    max-height: 80px;
+.custom-list-group .list-group-item.active {
+    background-color: white; /* Background color for the selected item */
+    color: red; /* Text color for the selected item */
+}
+
+
+.custom-navigation-wrapper {
+    background-color: black;
 }
