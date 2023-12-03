@@ -1,57 +1,43 @@
-.color-turquoise { color: #40a9c1; }
-.color-indigo { color: #424393; }
-.color-green { color: #3bac2a; }
-.bg-color-turquoise { background-color: #40a9c1; }
-.bg-color-indigo { background-color: #424393; }
-.bg-color-green { background-color: #3bac2a; }
-
-.dashboard {
-    width: 90vw;
+.title-content {
+    padding: 0px 20px;
 }
 
-.dashboard .list-group {
-    flex-direction: row;
-    flex-wrap: wrap;
+.courses-content {
+    padding: 0px 40px;
 }
 
-.dashboard .list-group-item {
+.card {
     width: 270px;
-    border: none;
+    position: relative;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    transition: margin-right 0.3s;
 }
 
-.card-group {
-    width: 275px;
-}
-
-.card-top {
-    height: 140px;
-    border-radius: 3px 3px 0px 0px;
-    color: blue
+.card-title a {
+    color: #333;
+    text-decoration: none;
 }
 
 .card-body {
-    height: 130px;
+    height: 125px;
 }
 
-p:hover {
-    text-decoration: underline;
+.card-body * {
+    margin: 0px;
 }
 
-.primary-text {
-    font-size: medium;
-    font-weight: 600;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
+.card-img-top {
+    height: 150px;
+    object-fit: cover;
+    background-color: steelblue;
+    position: relative;
 }
 
-.secondary-text {
-    font-size: medium;
-    color: #7d7d7d;
+.vertical-dots {
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
-.edit-dashboard {
-    width: 20vw;
-    border-color: #7d7d7d;
-    border-width: 1px;
-}
+

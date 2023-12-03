@@ -1,10 +1,11 @@
-import { useSelector, useDispatch } from "react-redux";
-import { useState } from "react";
-import { add } from "./addReducer";
+import {useSelector, useDispatch} from "react-redux";
+import {useState} from "react";
+import {add} from "./addReducer";
+
 function AddRedux() {
     const [a, setA] = useState(12);
     const [b, setB] = useState(23);
-    const { sum } = useSelector((state) => state.addReducer);
+    const {sum} = useSelector((state) => state.addReducer);
     const dispatch = useDispatch();
     return (
         <div className="w-25">
@@ -25,7 +26,7 @@ function AddRedux() {
                 className="form-control"
             />
             <button
-                onClick={() => dispatch(add({ a, b }))}
+                onClick={() => dispatch(add({a, b}))}
                 className="btn btn-primary"
             >
                 Add Redux
@@ -33,4 +34,5 @@ function AddRedux() {
         </div>
     );
 }
+
 export default AddRedux;

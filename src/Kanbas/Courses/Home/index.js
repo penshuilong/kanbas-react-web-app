@@ -1,82 +1,154 @@
-import React from "react";
-import ModuleList from "../Modules/ModuleList";
-import "./index.css";
+import Modules from "../Modules";
+import './index.css';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
-    FaBell,
-    FaCheck,
-    FaFileImport,
-    FaPlus
-} from "react-icons/fa";
-import "./index.css";
-import {FaEllipsis} from "react-icons/fa6";
-
+    faBell,
+    faBullhorn,
+    faChartSimple,
+    faCrosshairs,
+    faFileImport,
+    faShareFromSquare
+} from "@fortawesome/free-solid-svg-icons";
 
 function Home() {
     return (
-        <div className="row m-1 justify-content-between">
-            <div className="col wd-main-content">
-                <div className="d-flex wd-buttons-container justify-content-end">
-                        <button type="button" className="btn wd-switch-buttons">Collapse
-                            All
-                        </button>
-                        <button type="button" className="btn wd-switch-buttons">View Progress</button>
-
-                        <div className="dropdown">
-                            <button className="btn dropdown-toggle wd-switch-buttons" type="button"
-                                    id="dropdownMenuButton1"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                <FaCheck/>Publish All
-                            </button>
-                            <ul className="dropdown-menu" aria-labelledby="dropdownMenuButtojn1">
-                            </ul>
+        <div>
+            <div className="row">
+                <div className="col-12 col-sm-12 col-md-8">
+                    <Modules/>
+                </div>
+                <div className="col-4">
+                    <div className="course-status d-none d-lg-block">
+                        <ul className="list-unstyled">
+                            <li>
+                                <a href="#" className="btn btn-secondary w-100 mb-1">
+                                    <div className="d-flex align-items-center">
+                                        <div className="me-2">
+                                            <FontAwesomeIcon icon={faFileImport}></FontAwesomeIcon>
+                                        </div>
+                                        Import Existing Content
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" className="btn btn-secondary w-100 mb-1">
+                                    <div className="d-flex align-items-center">
+                                        <div className="me-2">
+                                            <FontAwesomeIcon icon={faShareFromSquare}/>
+                                        </div>
+                                        Import From Commons
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" className="btn btn-secondary w-100 mb-1">
+                                    <div className="d-flex align-items-center">
+                                        <div className="me-2">
+                                            <FontAwesomeIcon icon={faCrosshairs}></FontAwesomeIcon>
+                                        </div>
+                                        Choose Home Page
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" className="btn btn-secondary w-100 mb-1">
+                                    <div className="d-flex align-items-center">
+                                        <div className="me-2">
+                                            <FontAwesomeIcon icon={faChartSimple}></FontAwesomeIcon>
+                                        </div>
+                                        View Course Stream
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" className="btn btn-secondary w-100 mb-1">
+                                    <div className="d-flex align-items-center">
+                                        <div className="me-2">
+                                            <FontAwesomeIcon icon={faBullhorn}></FontAwesomeIcon>
+                                        </div>
+                                        New Announcement
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" className="btn btn-secondary w-100 mb-1">
+                                    <div className="d-flex align-items-center">
+                                        <div className="me-2">
+                                            <FontAwesomeIcon icon={faChartSimple}></FontAwesomeIcon>
+                                        </div>
+                                        New Analytics
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" className="btn btn-secondary w-100 mb-1">
+                                    <div className="d-flex align-items-center">
+                                        <div className="me-2">
+                                            <FontAwesomeIcon icon={faBell}></FontAwesomeIcon>
+                                        </div>
+                                        View Course Notifications
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <h6>To Do</h6>
+                        <hr/>
+                        <div className="row">
+                            <div className="col-1">
+                                <i className="fas fa-circle"></i>
+                            </div>
+                            <div className="col-10">
+                                <p className="to-do-top-row-text">Grade A1 - ENV + HTML</p>
+                                <p>100 points * Sep 18 at 11:59pm</p>
+                            </div>
+                            <div className="col-1">
+                                <i className="fas fa-x float-end"></i>
+                            </div>
                         </div>
-                        <button type="button" className="btn btn-danger">
-                            <FaPlus/>Module
-                        </button>
 
-                        <button type="button" className="btn btn-outline-dark wd-switch-buttons
-                         wd-detail-btn">
-                            <FaEllipsis/>
-                        </button>
-                </div>
-                <hr/>
-                <div>
-                    <h2>Home</h2>
-                    <ModuleList/>
-                </div>
-
-            </div>
-            <div className="col-3 wd-status">
-                <div className="row wd-status-bar-list">
-                    <button type="button" className="btn">
-                        <FaFileImport/> Existing Content</button>
-                    <button type="button" className="btn">Import from Commons</button>
-                    <button type="button" className="btn">Choose Home Page</button>
-                    <button type="button" className="btn">View Course Stream</button>
-                    <button type="button" className="btn">
-                         New Acnnouncement</button>
-                    <button type="button" className="btn">New Analytics</button>
-                    <button type="button" className="btn">
-                        <FaBell/> Course Notification</button>
-                </div>
-                <div className="wd-todo-list">
-                    <h5>To Do</h5>
-                    <hr/>
-                    <ul className="wdListNoDot m-0 p-0">
-                        <li>
-                            <p className=" wdKanbasRed m-0">Grade A1 - ENV + HTML</p>
-                            <p className=""><small>100 points Sep 18 at 11:59PM</small></p>
-                        </li>
-                        <li>
-                            <p className=" wdKanbasRed m-0">Grade A2 - CSS + BOOTSTRAP</p>
-                            <p className=""><small>100 points Oct 2 at 11:59PM</small></p>
-                        </li>
-                    </ul>
-
+                        <div className="d-flex justify-content-between mb-0">
+                            <h6>Coming Up</h6>
+                            <div className="d-flex align-items-center">
+                                <i className="fas fa-calendar me-2 mb-3"></i>
+                                <p>View Calendar</p>
+                            </div>
+                        </div>
+                        <hr/>
+                        <div className="row">
+                            <div className="col-2">
+                                <i className="fas fa-calendar me-2 mb-3 text-muted"></i>
+                            </div>
+                            <div className="col-10">
+                                <a href="#" className="text-danger text-decoration-none">Lecture</a>
+                                <p className="text-muted">CS4550.12631.202410 Sep 7 at
+                                    11:45am</p>
+                            </div>
+                            <div className="col-2">
+                                <i className="fas fa-calendar me-2 mb-3 text-muted"></i>
+                            </div>
+                            <div className="col-10">
+                                <a href="#" className="text-danger text-decoration-none">CS5610 06
+                                    SP23
+                                    Lecture</a>
+                                <p className="text-muted">CS4550.12631.202410 Sep 7 at
+                                    11:45am</p>
+                            </div>
+                            <div className="col-2">
+                                <i className="fas fa-calendar me-2 mb-3 text-muted"></i>
+                            </div>
+                            <div className="col-10">
+                                <a href="#" className="text-danger text-decoration-none">CS5610 Web
+                                    Development
+                                    Summer 1 2023 - LECTURE</a>
+                                <p className="text-muted">CS4550.12631.202410 Sep 11 at
+                                    11:45am</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
     );
 }
+
 export default Home;

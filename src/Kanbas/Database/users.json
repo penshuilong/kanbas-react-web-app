@@ -88,5 +88,25 @@
     "email": "legolas@mirkwood.com",
     "dob": "2879-07-15",
     "role": "FACULTY"
+  },
+  {
+    "_id": "130",
+    "username": "spider_man",
+    "password": "parker123",
+    "firstName": "Peter",
+    "lastName": "Parker",
+    "email": "peter@spiderman.com",
+    "dob": "1995-08-10",
+    "role": "STUDENT"
+  },
+  {
+    "_id": "131",
+    "username": "wonder_woman",
+    "password": "prince123",
+    "firstName": "Diana",
+    "lastName": "Prince",
+    "email": "diana@amazon.com",
+    "dob": "1980-10-21",
+    "role": "STUDENT"
   }
 ]

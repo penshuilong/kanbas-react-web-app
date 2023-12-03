@@ -48,7 +48,7 @@ function EncodingParametersInURLs() {
                 Fetch Sum of {a} + {b}
             </button>
             <button onClick={() => fetchSubtraction(a, b)}
-                    className="btn btn-danger mb-2 w-100">
+                    className="btn btn-danger me-2 w-100">
                 Fetch Subtraction of {a} - {b}
             </button>
 

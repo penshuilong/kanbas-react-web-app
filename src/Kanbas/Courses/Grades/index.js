@@ -1,69 +1,127 @@
-import React from "react";
 import db from "../../Database";
-import { useParams } from "react-router-dom";
-import "./index.css";
-import {FaFileExport, FaFileImport, FaFilter} from "react-icons/fa";
-import "../../kanbas-styles.css";
-import {FaGear} from "react-icons/fa6";
+import {useParams} from "react-router-dom";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {
+    faChevronDown,
+    faCog,
+    faFileExport,
+    faFileImport, faFilter, faKeyboard,
+    faSearch
+} from "@fortawesome/free-solid-svg-icons";
+
 function Grades() {
-    const { courseId } = useParams();
+    const {courseId} = useParams();
     const assignments = db.assignments.filter((assignment) => assignment.course === courseId);
     const enrollments = db.enrollments.filter((enrollment) => enrollment.course === courseId);
     return (
-        <div className="mt-2">
-            <div>
-                <div className="wd-top-buttons justify-content-end d-flex">
-                    <button type="button" className="btn wd-switch-buttons">
-                        <FaFileImport/>Import
-                    </button>
-                    <button type="button" className="btn wd-switch-buttons">
-                        <FaFileExport/>Export
-                    </button>
-                    <button type="button" className="btn wd-switch-buttons wd-gear-btn">
-                        <FaGear/>
-                    </button>
+        <div>
+            <div className="row">
+                <div className="col-6 text-danger mt-2">
+                    <div className="row">
+                        <div className="col-10 col-sm-11">
+                            <p>Gradebook <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon>
+                            </p>
+                        </div>
+                        <div className="col-1 col-sm-1">
+                            <FontAwesomeIcon icon={faKeyboard}></FontAwesomeIcon>
+                        </div>
+                    </div>
                 </div>
-                <div className="d-flex justify-content-between mb-2">
-                    <div className="col-5 ">
-                        <strong>Student Names</strong>
-                        <input type="text" className="form-control" placeholder="Search Students"/>
+
+                <div className="col-6">
+                    <div className="d-flex align-items-center justify-content-end mb-2">
+                        <a href="#" className="btn btn-secondary" role="button">
+                            <FontAwesomeIcon className="me-1" icon={faFileImport}></FontAwesomeIcon>
+                            Import
+                        </a>
+                        <a href="#" className="btn btn-secondary ms-1" role="button">
+                            <FontAwesomeIcon className="me-1" icon={faFileExport}></FontAwesomeIcon>
+                            Export
+                        </a>
+                        <a href="#" className="btn btn-secondary ms-1" role="button">
+                            <FontAwesomeIcon icon={faCog}></FontAwesomeIcon>
+                        </a>
 
                     </div>
-                    <div className="col-5">
-                        <strong>Assignment Names</strong>
-                        <input type="text" className="form-control" placeholder="Search Assignments"/>
-                    </div>
                 </div>
-                <button type="button" className="btn wd-switch-buttons mb-2">
-                    <FaFilter/> Apply Filters
-                </button>
+            </div>
+            <div id="module-1" className="row">
+                <form id="assignment-edit">
+
+                    <div className="row">
+                        <div className="col-6">
+                            <label htmlFor="text-fields-student-name" className="form-label">
+                                <h6>Student Names</h6>
+                            </label>
+
+                            <div className="input-group">
+                                                        <span className="input-group-text">
+                                                            <FontAwesomeIcon
+                                                                icon={faSearch}></FontAwesomeIcon>
+                                                        </span>
+                                <select className="form-select" id="text-fields-student-name">
+                                    <option selected disabled>Search Students</option>
+                                    <option value="student1">Student 1</option>
+                                    <option value="student2">Student 2</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div className="col-6">
+                            <label htmlFor="text-fields-assignment-name" className="form-label">
+                                <h6>Assignment Names</h6>
+                            </label>
+
+                            <div className="input-group">
+                                                        <span className="input-group-text">
+                                                            <FontAwesomeIcon
+                                                                icon={faSearch}></FontAwesomeIcon>
+                                                        </span>
+                                <select className="form-select" id="text-fields-assignment-name">
+                                    <option selected>Search Assignments</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <a href="#" className="btn btn-secondary mt-3 mb-3" role="button">
+                        <FontAwesomeIcon icon={faFilter}></FontAwesomeIcon>
+                        Apply Filters
+                    </a>
+                </form>
             </div>
             <div className="table-responsive">
-                <table className="table table-striped">
+                <table className="table table-striped table-bordered">
                     <thead>
-                    <th>Student Name</th>
-                    {assignments.map((assignment) => (<th>{assignment.title}</th>))}
+                    <tr>
+                        <th>Student Name</th>
+                        {assignments.map((assignment) => (
+                            <th key={assignment._id}>{assignment.title}</th>
+                        ))}
+                    </tr>
                     </thead>
-
-
                     <tbody>
-                    {enrollments.map((enrollment) => {
+                    {enrollments.map((enrollment, index) => {
                         const user = db.users.find((user) => user._id === enrollment.user);
                         return (
-                            <tr>
-                                <td>{user.firstName} {user.lastName}</td>
+                            <tr key={enrollment.user}>
+                                <td className="text-danger">{user.firstName} {user.lastName}</td>
                                 {assignments.map((assignment) => {
                                     const grade = db.grades.find(
-                                        (grade) => grade.student === enrollment.user && grade.assignment === assignment._id);
-                                    return (<td>{grade?.grade ||
-                                    <input type="text"
-                                           placeholder="Input Grade"
-                                           className="form-control "/> }</td>);})}
-                            </tr>);
+                                        (grade) => grade.student === enrollment.user
+                                                   && grade.assignment === assignment._id
+                                    );
+                                    return <td key={assignment._id}>{grade?.grade || ""}</td>;
+                                })}
+                            </tr>
+                        );
                     })}
-                    </tbody></table>
+                    </tbody>
+                </table>
             </div>
-        </div>);
+        </div>
+    );
 }
-export default Grades;
 
+export default Grades;

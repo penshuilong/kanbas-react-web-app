@@ -1,6 +1,7 @@
-import { createSlice } from "@reduxjs/toolkit";
+import {createSlice} from "@reduxjs/toolkit";
+
 const initialState = {
-    message: "Hello World",
+    message: "Hello World (this is the redux initial state message)",
 };
 const helloSlice = createSlice({
                                    name: "hello",

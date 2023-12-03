@@ -1,6 +1,7 @@
-import { useSelector, useDispatch } from "react-redux";
+import {useSelector, useDispatch} from "react-redux";
+
 function HelloRedux() {
-    const { message } = useSelector((state) => state.helloReducer);
+    const {message} = useSelector((state) => state.helloReducer);
     return (
         <div>
             <h1>Hello Redux</h1>
@@ -8,4 +9,5 @@ function HelloRedux() {
         </div>
     );
 }
+
 export default HelloRedux;
