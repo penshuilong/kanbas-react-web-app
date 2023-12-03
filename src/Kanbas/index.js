@@ -26,7 +26,7 @@ function Kanbas() {
   //   setCourses(newCourses);
   //   setNewCourse("");
   // };
-  const URL = "http://localhost:4000/api/courses";
+  const URL = "https://kanbas-node-server-app-nosd.onrender.com/api/courses";
   const findAllCourses = async () => {
     const courses = await client.findAllCourses();
     setCourses(courses);
@@ -64,25 +64,25 @@ function Kanbas() {
 
   return (
     <Provider store={store}>
-    <div className="d-flex">
-      <div style={{ background: "black" }} >
-        <KanbasNavigation />
+      <div className="d-flex">
+        <div style={{ background: "black" }} >
+          <KanbasNavigation />
+        </div>
+        <div>
+          <Routes>
+            <Route path="/" element={<Navigate to="Dashboard" />} />
+            <Route path="/Account" element={<Account />} />
+            <Route path="/Courses/:courseId/*" element={<Courses courses={courses} />} />
+            <Route path="/Dashboard" element={<Dashboard
+              courses={courses}
+              newCourse={newCourse}
+              setNewCourse={setNewCourse}
+              addCourse={addCourse}
+              deleteCourse={deleteCourse}
+              updateCourse={updateCourse} />} />
+          </Routes>
+        </div>
       </div>
-      <div>
-        <Routes>
-          <Route path="/" element={<Navigate to="Dashboard" />} />
-          <Route path="/Account" element={<Account />} />
-          <Route path="/Courses/:courseId/*" element={<Courses courses={courses} />} />
-          <Route path="/Dashboard" element={<Dashboard
-            courses={courses}
-            newCourse={newCourse}
-            setNewCourse={setNewCourse}
-            addCourse={addCourse}
-            deleteCourse={deleteCourse}
-            updateCourse={updateCourse} />} />
-        </Routes>
-      </div>
-    </div>
     </Provider>
   );
 }
