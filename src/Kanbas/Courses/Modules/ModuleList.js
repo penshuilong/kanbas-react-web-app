@@ -17,54 +17,28 @@ function ModuleList() {
     const handleUpdateModule = async () => {
         const status = await client.updateModule(module);
         dispatch(updateModule(module));
-      };
-    
+    };
+
     const handleDeleteModule = (moduleId) => {
         client.deletesModule(moduleId).then((status) => {
-          dispatch(deleteModule(moduleId));
+            dispatch(deleteModule(moduleId));
         });
-      };
-    
+    };
+
     const handleAddModule = () => {
         createModule(courseId, module).then((module) => {
-          dispatch(addModule(module));
+            dispatch(addModule(module));
         });
-      };
-    
+    };
+
     useEffect(() => {
         findModulesForCourse(courseId)
-          .then((modules) =>
-            dispatch(setModules(modules))
-        );
-      }, [courseId]);
-    
-    // const [modules, setModules] = useState(db.modules);
-    // const [module, setModule] = useState({
-    //     name: "New Module",
-    //     description: "New Description",
-    //     course: courseId,
-    // });
-    // const addModule = (module) => {
-    //     setModules([
-    //         { ...module, _id: new Date().getTime().toString() },
-    //         ...modules,
-    //     ]);
-    // };
-    // const deleteModule = (moduleId) => {
-    //     setModules(modules.filter(
-    //         (module) => module._id !== moduleId));
-    // };
-    // const updateModule = () => {
-    //     setModules(
-    //         modules.map((m) => {
-    //             if (m._id === module._id) {
-    //                 return module;
-    //             } else {
-    //                 return m;
-    //             }
-    //         })
-    //     );
-    // }
+            .then((modules) =>
+                dispatch(setModules(modules))
+            );
+    }, [courseId]);
+
+
     const modules = useSelector((state) => state.modulesReducer.modules);
     const module = useSelector((state) => state.modulesReducer.module);
     const dispatch = useDispatch();

@@ -1,31 +1,3 @@
-/* .wd-course-navigation {
-    background-color: white;
-    list-style: none;
-    padding: 0px;
-    width: 120px;
-    margin: 0px;
-    margin-left: 20px;
-}
-.wd-course-navigation li {
-    padding-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.wd-course-navigation li.wd-active {
-    border-left: 2px solid black;
-}
-.wd-course-navigation li.wd-active a {
-    color: black;
-}
-.wd-course-navigation a {
-    color: red;
-    text-decoration: none;
-} */
-
-/* .wd-course-navigation li {
-    border: none;
-} */
-
 .custom-list-group-course .list-group-item {
     border: none;
     background-color: white;
